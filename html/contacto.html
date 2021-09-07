@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Astro Data</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@500&display=swap" rel="stylesheet"></head>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    
+<body>
+    <nav class="barra__navegador">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="../index.html"><img src="../img/logo50px.png" id="logo" alt="Imagen logo" /></a>
+      <h1>Astro Data</h1>
+      <ul>
+        <li class="barra__navegador barra__navegador--active"><a href="quienSoy.html">Quién soy</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contenido.html">Contenido</a></li>
+        <li><a href="contacto.html">Contactame</a></li>
+      </ul>
+    </nav>
+
+
+
+<!---------------------------------CIERRE HEADER COMIENZO MAIN------------------------------------>
+
+ <main>
+        <section>
+            <h2>Contacto</h2>
+<!--COMIENZO FORMULARIO-->
+            <form action="" method="POST" autocomplete="on" class="contacto__grid">
+<!--FORM DATOS PERSONALES-->
+                <fieldset class="contacto__grid contacto__grid--fieldsetNombre">
+                    <legend> Por favor, completa los siguientes datos: </legend>
+                        <label for="nombre">¿Cuál es tu nombre?</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Amanda Gonzalez" required>
+                        <label for="prenombre">¿Qué pronombre preferís que use para referirme a vos?</label>
+                        <select name="pronombre" id="pronombre">
+                            <option value="ella">Ella</option>
+                            <option value="el">Él</option>
+                            <option value="elle">Elle</option>
+                        </select>
+                        <label for="nacimiento">¿Cuál es tu fecha de nacimiento?</label>
+                        <input type="date" name="nacimiento" id="nacimiento" placeholder="25-02-2000">
+                        <label for="email">¿A qué casilla de correo electrónico me comunico?</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@email.com" required>
+                        <label for="suscripcion">¿Te querés suscribir a mi lista de correo electrónico para recibir novedades y ofertas?</label>
+                        <input type="checkbox" name="suscripcion" id="suscripcionSi" value="si" required>
+                </fieldset>
+<!--FORM MOTIVO DEL CONTACTO-->
+                <fieldset class="contacto__grid contacto__grid--fieldsetContacto">
+                    <legend> Completá los siguientes datos sobre tu consulta o comentario: </legend>
+                        <label for="motivoconsulta">¿Cuál es el motivo de tu consulta?</label>
+                        <select name="motivoconsulta" id="motivoconsulta" required>
+                            <option value="talleres">Clases</option>
+                            <option value="constultoria">Consultoria astrológica</option>
+                            <option value="dudas">Dudas y sugerencias</option>
+                        </select>
+                        <label for="comentario">A continuación podés escribir tu consulta o comentario:</label>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribí acá tu comentario o consulta..." required></textarea>
+                </fieldset>
+<!--ENVIAR/RESETEO FORM-->
+                <div class="contacto__grid contacto__grid--fieldsetBotones">                
+                    <input type="reset" name="reset" id="reset" value="Limpiar formulario">
+                    <input type="submit" name="enviar" id="enviar" value="Enviar formulario">
+                </div>
+            </form>
+        </section>
+    </main>
+<!----------------------------------------COMIENZO FOOTER------------------------------------------>
+
+<footer class="flexFooter">
+
+    <!-----------------------------------------------LINK A REDES SOCIALES/CONTACTO RÁPIDO/ETC------------------------------------------------>
+          <div class="redes_footer">
+            <p><a href="mailto:hola.astrodata@gmail.com"><ion-icon name="mail-outline" class="iconos"></ion-icon>hola.astrodata@gmail.com</a></p>
+            <p>+54 9 11 2345 6789</p>
+            <p><a href="https://www.instagram.com/astro_data_/" target="_blank"><ion-icon name="logo-instagram" class="iconos"></ion-icon>@astro_data_</a></p>
+            <p><a href="https://open.spotify.com/user/dksuk8badkkh0rssltosrk5n0?ltclid=" target="_blank"><ion-icon name="musical-notes-sharp" class="iconos"></ion-icon>Perfil de Spotify</a></p>
+            <p>Diseño web: Eva Bonaparte - Ilustraciones e imágenes: Marina Ottone </p>
+          </div>
+        </footer>
+        </div>
+      </body>
+    </html>
