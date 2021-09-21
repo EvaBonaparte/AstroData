@@ -6,30 +6,39 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Inicio - Astro Data</title>
       <link rel="stylesheet" href="css/estilo.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@500&display=swap" rel="stylesheet">
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
 
 
 
   <body>
-    <nav class="barra__navegador">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <a href="index.html"><img src="img/logo50px.png" id="logo" alt="Imagen logo" /></a>
-      <h1>Astro Data</h1>
-      <ul>
-        <li class="barra__navegador barra__navegador--active"><a href="html/quienSoy.html">Quién soy</a></li>
-        <li><a href="html/servicios.html">Servicios</a></li>
-        <li><a href="html/contenido.html">Contenido</a></li>
-        <li><a href="html/contacto.html">Contactame</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <img src="img/logo50px.png" id="logo" alt="Imagen logo" />
+        <a class="navbar-brand" href="index.html">Astro Data</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="html/quienSoy.html">Quién Soy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contenido.html">Contenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/contacto.html">Contactame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
 
@@ -72,30 +81,27 @@
 
         <section class="secciondos_index">
           <h3>Las partes principales de la práctica astrológica occidental</h3>
-          <article class="secciondos_index secciondos_index__Uno">
-            <h4><a href="html/servicios.html#tallerSignos">Signos</a></h4>
-            <p>"Cada fase del proceso zodiacal -cada signo del Zodiaco- representa un estado de experiencia humana” Dane Rudyar.</p>
-          </article>
-          <article class="secciondos_index secciondos_index__Dos">
-            <h4><a href="html/servicios.html#tallerPlanetas">Planetas</a></h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              quibusdam labore quia dicta quos eligendi tempore quaerat
-              suscipit minima rem, adipisci voluptatem, magni, reprehenderit
-              ex quidem omnis dolore amet molestiae.
-            </p>
-          </article>
-          <article class="secciondos_index secciondos_index__Tres">
-            <h4>
-              <a href="html/servicios.html#tallerCasas">Casas astrológicas</a>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-              quibusdam labore quia dicta quos eligendi tempore quaerat
-              suscipit minima rem, adipisci voluptatem, magni, reprehenderit
-              ex quidem omnis dolore amet molestiae.
-            </p>
-          </article>
+          <div class="card w-180">
+            <div class="card-body">
+              <h5 class="card-title">Signos</h5>
+              <p class="card-text">"Cada fase del proceso zodiacal -cada signo del Zodiaco- representa un estado de experiencia humana” Dane Rudyar.</p>
+              <a href="html/servicios.html#tallerSignos" class="btn btn-primary">Ir al curso</a>
+            </div>
+          </div>
+          <div class="card w-180">
+            <div class="card-body">
+              <h5 class="card-title">Planetas</h5>
+              <p class="card-text">"Cada fase del proceso zodiacal -cada signo del Zodiaco- representa un estado de experiencia humana” Dane Rudyar.</p>
+              <a href="html/servicios.html#tallerPlanetas" class="btn btn-primary">Ir al curso</a>
+            </div>
+          </div>
+          <div class="card w-180">
+            <div class="card-body">
+              <h5 class="card-title">Casas astrológicas</h5>
+              <p class="card-text">"Cada fase del proceso zodiacal -cada signo del Zodiaco- representa un estado de experiencia humana” Dane Rudyar.</p>
+              <a href="html/servicios.html#tallerCasas" class="btn btn-primary">Ir al curso</a>
+            </div>
+          </div>
         </section>
 <!----------------------------FINALIZA TERCERA SECCIÓN. LINK QUE LLEVA A BIO PARA SABER MÁS--------------------------->
         <a href="html/quienSoy.html" id="parasabermas"><p>Para saber mas sobre la perspectiva desde la cual abordo la
@@ -117,5 +123,6 @@
       </div>
     </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
