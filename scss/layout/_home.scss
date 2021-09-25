@@ -1,4 +1,4 @@
-@import "_variables";
+@import "variables.scss";
 
 
 .grilla__Index {
@@ -9,52 +9,53 @@
                          "seccion2"
                          "seccion3"
                          "seccion4";
-  }
-  .astrodata_index{
-    grid-area: seccion1;
-    align-items: baseline;
-  }
-  .queEsastrologia {
-    grid-area: seccion2;
-    background-clip: padding-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .queEsastrologia p {
-    text-align: inherit;
-    padding: 30px;
-    width: 80%;
-  }
-  .secciondos_index {
-    grid-area: seccion3;
-    text-align: center;
-  }
-  
-  .card-body{
-    text-align: center;
-    margin: auto;
-    border-radius: 50px;
-    margin: 10px;
-    background-color: rgba(221, 221, 221, 0.658);
-  }
-  .card-body h5{  
-    color: #a5218f;
-    letter-spacing: 5px;
-    font-size: 25px;
-    font-weight: bolder;
-  }
-  
-  #parasabermas{
-    grid-area: seccion4;
-    text-decoration: none;
-    color: #e0efde;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  #parasabermas:hover {
-    text-decoration: underline;
-    align-items: center;
-  }
+    .astrodata_index{
+        grid-area: seccion1;
+        align-items: baseline;
+    }
+    .queEsastrologia {
+        grid-area: seccion2;
+        background-clip: padding-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h2{
+            @include titulos(center, 5px, 10px, 60px, #f371de, 45px);
+        }
+        p {
+            text-align: inherit;
+            padding: 30px;
+            width: 80%;
+        }
+    }
+    .secciondos_index {
+        grid-area: seccion3;
+        text-align: center;
+        .card-body{
+            text-align: center;
+            margin: auto;
+            border-radius: 50px;
+            margin: 10px;
+            background-color: rgba(221, 221, 221, 0.658);
+        }
+        h5{
+            @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
+        }        
+    }
+    #parasabermas{
+        grid-area: seccion4;
+        text-decoration: none;
+        color: #e0efde;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        #parasabermas:hover {
+            text-decoration: underline;
+            align-items: center;
+          }
+    }
+}
+
+
+
