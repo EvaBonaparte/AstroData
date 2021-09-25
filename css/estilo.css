@@ -25,7 +25,10 @@ h2 {
 h3{
   color: #f371de;
 }
-
+.tituloSeccion{
+  margin-top: 60px;  
+  text-align: center;
+}
 
 /*---------------------------------------------------NAV BAR------------------------------------------------------*/
 
@@ -133,6 +136,7 @@ h3{
   margin: auto;
   padding: 0px;
   font-size: 20px;
+  color: #ddd;
 }
 #aclaracionCovid {
   font-style: italic;
@@ -150,6 +154,7 @@ h3{
   font-size: 50px;
 }
 table, tr, td, th {
+  color: #ddd;
   font-size: 20px;
   margin: auto;
   text-align: center;
@@ -176,9 +181,13 @@ th {
 #aclaracionesServicios p{
   font-size: 15px;
 }
+#collapseExample{
+  padding: 5px;
+  text-align: center;
+}
 
 
-/*Contenido*/
+/*----------------------------------------------CONTENIDO------------------------------------------------*/
 
 .contenido__externo{
   display: grid;
@@ -192,22 +201,18 @@ th {
   row-gap: 10px;
   column-gap: 10px;
   padding: 15px;
+  text-align: center;
 }
-
 .contenido__externo h3{
   color: #f371de;
-  font-size: 30px;
   text-align: center;
-  padding: 20px;
-  margin: 10px;
-  background-color: rgba(77, 77, 77, 0.233);
+  background-color: #20485e69;
   border-radius: 15px;
+  padding: 10px;
 }
-
 .contenido__externo--Titulo{
   grid-area: tituloContenido;
 }
-
 .contenido__externo--InstagramPost{
   grid-area: contenidoInstagramtotal;
   display: grid;
@@ -217,20 +222,20 @@ th {
   justify-content: space-around;
   align-items: center;
 }
-
 .contenido__externo--Spotify{
   grid-area: contenidoSpotifytotal;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 10% 80%;
-  grid-template-areas: "tituloPlaylist tituloPlaylist tituloPlaylist"
-                       "Playlist1 Playlist2 Playlist3";
-  justify-content: space-around;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-
-.contenido__externo--Spotify h3{
-  grid-area: tituloPlaylist;
+.contenido__externo--SpotifyPlaylist{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contenido__externo--SpotifyPlaylist iframe{
+  width: 260px;
+  justify-content: space-between;
 }
 
 /*--------------------------------------------------------- CONTACTO ----------------------------------------------------------*/
@@ -238,11 +243,9 @@ th {
 form {
   margin: auto;
 }
-
 legend {
   background-color: #68325f;
 }
-
 .contacto__grid{
     display: grid;
     grid-template-columns: 45% 45%;
@@ -255,11 +258,9 @@ legend {
     align-items: center;
     color: #ddd;
 }
-
 fieldset {
   border-color: rgba(221, 221, 221, 0.658);
 }
-
 .contacto__grid--fieldsetNombre {
   background-image: url(../img/img_formNombre.png);
   grid-area: nombreFieldset;
@@ -268,7 +269,6 @@ fieldset {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .contacto__grid--fieldsetContacto {
   background-image: url(../img/img_formNombre.png);
   grid-area: contactoFieldset;
@@ -277,7 +277,6 @@ fieldset {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 #nombre {
   font: "Merriweather", serif;
   color: #0f0f1d;
@@ -285,7 +284,6 @@ fieldset {
   border: none;
   border-radius: 3px;
 }
-
 .form-select {
   font: "Merriweather", serif;
   color: #0f0f1d;
@@ -293,7 +291,6 @@ fieldset {
   border: none;
   border-radius: 3px;
 }
-
 #nacimiento {
   font: "Merriweather", serif;
   color: #0f0f1d;
@@ -301,7 +298,6 @@ fieldset {
   border: none;
   border-radius: 3px;
 }
-
 #email {
   font: "Merriweather", serif;
   color: #0f0f1d;
@@ -309,7 +305,6 @@ fieldset {
   border: none;
   border-radius: 3px;
 }
-
 #motivoconsulta {
   font: "Merriweather", serif;
   color: #0f0f1d;
@@ -317,7 +312,6 @@ fieldset {
   border: none;
   border-radius: 3px;
 }
-
 textarea {
   font: "Merriweather", serif;
   border: none;
@@ -325,11 +319,9 @@ textarea {
   background-color: rgba(221, 221, 221, 0.767);
   color: #111221;
 }
-
 .contacto__grid--fieldsetBotones{
     grid-area: botonesFieldset;
 }
-
 #reset {
   background-color: #ddd;
   color: #062c41;
@@ -337,7 +329,6 @@ textarea {
   border: none;
   border-radius: 15px;
 }
-
 #reset:hover {
   background-color: #dad295;
 }
@@ -478,9 +469,6 @@ textarea {
     font-size: 15px;
   }
 
-
-
-
     /*------------------------------------- SERVICIOS ------------------------------------*/  
 
     .serviciosIntro h2{
@@ -524,6 +512,17 @@ textarea {
       padding: 10px;
     }
 
+
+/*-------------------------------------CONTENIDO------------------------------------*/
+  .contenido__externo h3{
+    padding: 5px;
+  }
+
+  .contenido__externo--Spotify iframe{
+    padding-bottom: 15px;
+  }
+
+/*-------------------------------------CONTACTO------------------------------------*/
 
 
 /*-------------------------------------FOOTER------------------------------------*/
@@ -671,6 +670,12 @@ textarea {
     }
 
 
+  /*-------------------------------------CONTENIDO------------------------------------*/
+
+
+  /*-------------------------------------CONTACTO------------------------------------*/
+
+
 
   /*-------------------------------------FOOTER------------------------------------*/
     .redes_footer p{
@@ -808,6 +813,12 @@ textarea {
     padding: 10px;
     font-size: 15px;
   }
+
+/*-------------------------------------CONTENIDO------------------------------------*/
+
+
+/*-------------------------------------CONTACTO------------------------------------*/
+
 
 
 /*-------------------------------------FOOTER------------------------------------*/
@@ -972,6 +983,12 @@ textarea {
     border-radius: 15px;
     margin: 10px;
   }
+
+
+/*-------------------------------------CONTENIDO------------------------------------*/
+
+
+/*-------------------------------------CONTACTO------------------------------------*/
 
 
 
