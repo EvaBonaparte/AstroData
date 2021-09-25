@@ -215,12 +215,14 @@ th {
 }
 .contenido__externo--InstagramPost{
   grid-area: contenidoInstagramtotal;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-template-rows: 20% 20% 20% 20%;
-  column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+.instagram-media{
+  width: 260px;
 }
 .contenido__externo--Spotify{
   grid-area: contenidoSpotifytotal;
