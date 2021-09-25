@@ -1,0 +1,66 @@
+@import "_variables";
+
+
+.serviciosIntro{
+    h2{
+        @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
+    }
+    li{
+        @include texto-parrafo(center, none, 5px, auto, $colorParrafo, 20px);
+    }
+    p{
+        color: $colorAclaraciones;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
+
+
+.seccion_Servicios{
+    #talleresLink {
+        color: $colorAlternativoDos;
+        text-align: center;
+        font-size: 50px;
+    }
+    #consultoriaLink {
+        @extend #talleresLink ;
+    }
+    table{
+        tr{
+            th {
+                color: $colorParrafo;
+                font-size: 20px;
+                margin: auto;
+                text-align: center;
+                border-collapse: collapse;
+                border-bottom: 1px solid $colorParrafo;
+                border-top: 1px solid $colorParrafo;
+            }
+        }
+        tr{
+            td{
+                a{
+                    color: $colorAlternativoUno;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+                #collapseExample{
+                    padding: 5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+#aclaracionesServicios {
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    color: $colorAclaraciones;
+    font-size: 15px;
+    p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,48 @@
+@import "_variables";
+@import "layout/_contenido";
+@import "layout/_servicios";
+@import "layout/_home";
+@import "layout/_contacto";
+@import "layout/_quienSoy";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/ep_naturalblack.png);
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-variant: initial;
+    width: 100%;
+
+    .navbar{
+        height: 0%;
+      .container-fluid{
+        position: fixed;
+        top: 10px;
+        height:fit-content;
+        background-image: url(../img/ep_naturalblack.png);
+        #logo{
+            padding: 10px;
+            padding-right: 20px;
+          }
+        }
+    }
+    p{
+        color: $colorParrafo;
+        font-size: 20px;
+    }
+    h2{
+        @include titulos(center, 5px, 10px, 60px, #f371de, 45px);
+    }
+    h3{
+        @include titulos(center, none, 10px, 20px, #e268ce, 30px);
+    }
+    li{
+        @include texto-parrafo(center, none, 5px, auto, #ddd, 20px);
+    }
+}

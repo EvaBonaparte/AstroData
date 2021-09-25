@@ -1,0 +1,60 @@
+@import "_variables";
+
+
+.grilla__Index {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 34% 48% 8%;
+    grid-template-areas: "seccion1"
+                         "seccion2"
+                         "seccion3"
+                         "seccion4";
+  }
+  .astrodata_index{
+    grid-area: seccion1;
+    align-items: baseline;
+  }
+  .queEsastrologia {
+    grid-area: seccion2;
+    background-clip: padding-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .queEsastrologia p {
+    text-align: inherit;
+    padding: 30px;
+    width: 80%;
+  }
+  .secciondos_index {
+    grid-area: seccion3;
+    text-align: center;
+  }
+  
+  .card-body{
+    text-align: center;
+    margin: auto;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: rgba(221, 221, 221, 0.658);
+  }
+  .card-body h5{  
+    color: #a5218f;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  #parasabermas{
+    grid-area: seccion4;
+    text-decoration: none;
+    color: #e0efde;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #parasabermas:hover {
+    text-decoration: underline;
+    align-items: center;
+  }

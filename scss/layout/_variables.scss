@@ -1,0 +1,34 @@
+
+@mixin organizacionGeneralHTML($display, $align-items, $justify-content, $text-align){
+    display:$display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    text-align: $text-align;
+}
+
+@mixin titulos($text-align, $letter-spacing, $padding, $margin-top, $color, $font-size){
+    text-align: $text-align;
+    letter-spacing: $letter-spacing;
+    padding: $padding;
+    margin-top: $margin-top;
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin texto-parrafo($text-align, $list-style-type, $padding, $margin, $color, $font-size){
+    text-align: $text-align;
+    list-style-type: $list-style-type;
+    padding: $padding;
+    margin: $margin;
+    color: $color;
+    font-size: $font-size;
+}
+
+
+
+
+$colorParrafo: color #ddd;
+$colorAclaraciones: color rgb(148, 148, 148);
+$colorAlternativoUno: color #f371de;
+$colorAlternativoDos: color #ffef78;
+
