@@ -218,11 +218,12 @@ th {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .instagram-media{
   width: 260px;
+  margin: 5px;
 }
 .contenido__externo--Spotify{
   grid-area: contenidoSpotifytotal;
