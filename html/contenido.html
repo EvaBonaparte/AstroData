@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenido - Astro Data</title>
+    <title>Inicio - Astro Data</title>
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@500&display=swap" rel="stylesheet"></head>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
-
+  
 <body>
-    <nav class="barra__navegador">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-        </label>
-        <a href="../index.html"><img src="../img/logo50px.png" id="logo" alt="Imagen logo" /></a>
-        <h1>Astro Data</h1>
-        <ul>
-            <li class="barra__navegador barra__navegador--active"><a href="quienSoy.html">Quién soy</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contenido.html">Contenido</a></li>
-            <li><a href="contacto.html">Contactame</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <img src="../img/logo50px.png" id="logo" alt="Imagen logo" />
+        <a class="navbar-brand" href="../index.html">Astro Data</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="quienSoy.html">Quién Soy</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contenido.html">Contenido</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contactame</a>
+            </li>
         </ul>
-    </nav>
-    
+        </div>
+    </div>
+    </nav>    
     
     
     <!---------------------------------CIERRE HEADER COMIENZO MAIN------------------------------------>
@@ -70,5 +78,6 @@
           </div>
         </footer>
         </div>
-      </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
     </html>
