@@ -118,3 +118,109 @@
     }
 
 }
+
+@media only screen and (min-width: 401px){
+    .serviciosIntro{
+        h2{
+            padding-top: 100px;
+            font-size: 40px;
+        }
+        #aclaracionCovid {
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+    }
+    .seccion_Servicios{        
+        #talleresLink {
+            padding: 30px;
+            margin: 100px 0px 40px;
+            font-size: 30px;
+        }
+        #consultoriaLink {
+            padding: 10px;
+            margin: 100px 0px 40px;
+            font-size: 30px;
+        }
+        table{
+            max-width: 80%;
+            li {
+                padding: 10px;
+            }
+            tr{
+                td{
+                    padding: 10px;
+                    font-size: 15px;
+                }
+            }
+            tr{
+                th {
+                    padding: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #aclaracionesServicios {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        max-width: 60%;
+        p {
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .serviciosIntro{
+        h2{
+            padding-top: 100px;
+        }
+        li{
+            font-size: 20px;
+        }
+        #aclaracionCovid {
+            margin-top: 50px;
+            margin-bottom: 80px;
+            font-size: 15px;
+        }
+    }
+    .seccion_Servicios{ 
+        #talleresLink {
+            padding: 10px;
+            margin: 100px 0px 40px;
+            font-size: 50px;
+          }
+          #consultoriaLink {
+            padding: 10px;
+            margin: 100px 0px 40px;
+            font-size: 50px;
+          }
+          table{        
+              max-width: 80%;
+              font-size: 20px;
+              li {
+                  padding: 10px;
+              }
+              tr{
+                  td{
+                      padding: 30px;
+                    }
+              }
+              tr{
+                  th {
+                      padding: 30px;
+                    }
+              }
+          }
+    }
+    #aclaracionesServicios {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        max-width: 60%;
+        font-size: 15px;
+        p {
+            padding: 10px;
+            font-size: 15px;
+        }
+    }  
+}

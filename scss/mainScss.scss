@@ -1,9 +1,9 @@
-@import "layout/_variables.scss";
-@import "layout/_contenido.scss";
-@import "layout/_servicios.scss";
-@import "layout/_home.scss";
-@import "layout/_contacto.scss";
-@import "layout/_quienSoy.scss";
+@import "../scss/layout/variables";
+@import "../scss/layout/contacto";
+@import "../scss/layout/contenido";
+@import "../scss/layout/home";
+@import "../scss/layout/quienSoy";
+@import "../scss/layout/servicios";
 
 *{
     padding: 0;
@@ -128,10 +128,10 @@ body{
 
 @media only screen and (min-width: 1000px){
     h2{
-        @include titulos(center, 5px, 10px, 60px, #f371de, 45px);
+        @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
     }
     h3{
-        @include titulos(center, none, 10px, 20px, #e268ce, 30px);
+        @include titulos(center, none, 10px, 20px, $colorAlternativoUno, 30px);
     }
     .redes_footer{
         p{

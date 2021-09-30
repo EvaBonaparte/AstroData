@@ -17,7 +17,7 @@
 @media only screen and (max-width: 400px){
 
     .biografia {
-        background-image: url(../img/quienSoyfondo300px.png);
+        background-image: url(../img/quienSoyfondo400px);
         padding: 20px;
         margin-bottom: 50px;
         h2{
@@ -30,4 +30,50 @@
         }
     }
 }
-  
+
+@media only screen and (min-width: 401px){
+    .biografia {
+        padding: 20px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 30px;
+            padding-top: 90px;
+        }
+        p {
+            padding: 10px;
+            font-size: 15px;
+          }
+      }
+}
+
+@media only screen and (min-width: 600px){
+
+    .biografia {
+        background-image: url(../img/quienSoyfondo600px.png);
+        padding: 20px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 50px;
+            padding-top: 90px;
+        }
+        p {
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .biografia {
+        padding: 20px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 90px;
+            padding-top: 110px;
+        }
+        p {
+            padding: 20px;
+            font-size: 40px;
+        }
+    }
+} 

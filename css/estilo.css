@@ -1,406 +1,657 @@
+form {
+  margin: auto; }
+  form legend {
+    background-color: color #a5218f; }
+  form .contacto__grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45% 10%;
+    grid-template-areas: "nombreFieldset nombreFieldset" "contactoFieldset contactoFieldset" "botonesFieldset botonesFieldset";
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: color #ddd; }
+  form fieldset {
+    border-color: color #949494; }
+  form .contacto__grid--fieldsetNombre {
+    background-image: url(../img/img_formNombre.png);
+    grid-area: nombreFieldset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  form .contacto__grid--fieldsetContacto {
+    background-image: url(../img/img_formNombre.png);
+    grid-area: contactoFieldset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  form #nombre {
+    font: "Merriweather", serif;
+    color: #0f0f1d;
+    background-color: color #949494;
+    border: none;
+    border-radius: 3px; }
+  form .form-select {
+    font: "Merriweather", serif;
+    color: #0f0f1d;
+    background-color: color #949494;
+    border: none;
+    border-radius: 3px; }
+  form #nacimiento {
+    font: "Merriweather", serif;
+    color: color #0f0f1d;
+    background-color: color #949494;
+    border: none;
+    border-radius: 3px; }
+  form #email {
+    font: "Merriweather", serif;
+    color: color #0f0f1d;
+    background-color: color #949494;
+    border: none;
+    border-radius: 3px; }
+  form #motivoconsulta {
+    font: "Merriweather", serif;
+    color: color #0f0f1d;
+    background-color: color #949494;
+    border: none;
+    border-radius: 3px; }
+  form textarea {
+    font: "Merriweather", serif;
+    border: none;
+    border-radius: 5px;
+    background-color: color #949494;
+    color: color #0f0f1d; }
+  form .contacto__grid--fieldsetBotones {
+    grid-area: botonesFieldset; }
+  form #reset {
+    background-color: color #ddd;
+    color: color #062c41;
+    font-family: "Merriweather", serif;
+    border: none;
+    border-radius: 15px; }
+  form #reset:hover {
+    background-color: color #ffef78; }
+  form #reset:active {
+    background-color: color #f371de; }
+  form .enviar {
+    background-color: color #ddd;
+    color: color #062c41;
+    font-family: "Merriweather", serif;
+    border: none;
+    border-radius: 15px; }
+  form .enviar:hover {
+    background-color: color #ffef78; }
+  form .enviar:active {
+    background-color: color #f371de; }
+  form .modal-title {
+    color: color #0f0f1d; }
+  form .modal-body {
+    color: color #0f0f1d; }
 
-/*--------------------------------------------------MEDIA QUERY------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+  form {
+    max-width: 80%;
+    padding-bottom: 100px;
+    font-size: 20px; }
+    form legend {
+      font-size: 25px;
+      padding: 10%;
+      border-radius: 50px; }
+    form fieldset {
+      border-width: 3px;
+      border-radius: 5px; }
+      form fieldset .contacto__grid--fieldsetNombre {
+        margin-bottom: 50px;
+        grid-area: nombreFieldset; }
+        form fieldset .contacto__grid--fieldsetNombre #nombre {
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px; }
+        form fieldset .contacto__grid--fieldsetNombre .form-select {
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px; }
+        form fieldset .contacto__grid--fieldsetNombre #nacimiento {
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 160px;
+          margin-left: 100px; }
+        form fieldset .contacto__grid--fieldsetNombre #email {
+          font-size: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px; }
+      form fieldset .contacto__grid--fieldsetContacto {
+        background-image: url(../img/img_formNombre.png);
+        grid-area: contactoFieldset; }
+        form fieldset .contacto__grid--fieldsetContacto #motivoconsulta {
+          padding: 4px;
+          border-radius: 3px;
+          margin: 10px;
+          width: 300px; }
+        form fieldset .contacto__grid--fieldsetContacto textarea {
+          border-radius: 5px;
+          margin: 10px;
+          width: 400px;
+          height: 200px; }
+      form fieldset .contacto__grid--fieldsetBotones {
+        grid-area: botonesFieldset; }
+        form fieldset .contacto__grid--fieldsetBotones #reset {
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          margin: 10px; }
+        form fieldset .contacto__grid--fieldsetBotones .enviar {
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          margin: 10px; } }
 
-
-@media only screen and (min-width: 401px){
-
-    /*-------------------------------------INDEX---------------------------------*/
-    .grilla__Index--main {
-      padding-top: 50px;
+.contenido__externo {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 5% 50% 20%;
+  grid-template-areas: "tituloContenido" "contenidoInstagramtotal" "contenidoSpotifytotal";
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 15px;
+  text-align: center; }
+  .contenido__externo h3 {
+    background-color: #20485e69;
+    border-radius: 15px; }
+  .contenido__externo .contenido__externo--Titulo {
+    grid-area: tituloContenido; }
+  .contenido__externo .contenido__externo--InstagramPost {
+    grid-area: contenidoInstagramtotal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .contenido__externo .contenido__externo--InstagramPost .instagram-media {
+      width: 260px;
+      margin: 5px; }
+  .contenido__externo .contenido__externo--Spotify {
+    grid-area: contenidoSpotifytotal;
+    display: flex;
+    flex-direction: column; }
+    .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .astrodata_index{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .astrodata_index h2{
-      font-size: 34px;
-      align-items: center;
-      font-weight: lighter;
-      letter-spacing: 5px;
-    }
-    .astrodata_index p{
-      font-size: small;
-      width: 80%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist .contenido__externo--SpotifyPlaylist iframe {
+        width: 260px;
+        justify-content: space-between; }
+
+@media only screen and (max-width: 400px) {
+  .contenido__externo h3 {
+    padding: 5px; }
+  .contenido__externo--Spotify iframe {
+    margin-bottom: 20px; } }
+
+.grilla__Index {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 34% 48% 8%;
+  grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4"; }
+  .grilla__Index .astrodata_index {
+    grid-area: seccion1;
+    align-items: baseline; }
+  .grilla__Index .queEsastrologia {
+    grid-area: seccion2;
+    background-clip: padding-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .grilla__Index .queEsastrologia h2 {
       text-align: center;
-      align-items: center;
-    }
-    .queEsastrologia{
+      letter-spacing: 5px;
+      padding: 10px;
+      margin-top: 60px;
+      color: color #f371de;
+      font-size: 45px; }
+    .grilla__Index .queEsastrologia p {
+      text-align: inherit;
+      padding: 30px;
+      width: 80%; }
+  .grilla__Index .secciondos_index {
+    grid-area: seccion3;
+    text-align: center; }
+    .grilla__Index .secciondos_index .card-body {
+      text-align: center;
+      margin: auto;
+      border-radius: 50px;
+      margin: 10px;
+      background-color: rgba(221, 221, 221, 0.658); }
+    .grilla__Index .secciondos_index h5 {
+      text-align: center;
+      letter-spacing: 5px;
+      padding: 5px;
+      margin-top: auto;
+      color: color #a5218f;
+      font-size: 25px; }
+  .grilla__Index #parasabermas {
+    grid-area: seccion4;
+    text-decoration: none;
+    color: #e0efde;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    .grilla__Index #parasabermas #parasabermas:hover {
+      text-decoration: underline;
+      align-items: center; }
+
+@media only screen and (max-width: 400px) {
+  #imagen_index {
+    width: 200px; }
+  .grilla__Index--main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .grilla__Index--main .astrodata_index {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .grilla__Index--main .astrodata_index h2 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: auto;
+        margin-top: auto;
+        color: color #f371de;
+        font-size: 34px;
+        font-weight: lighter; }
+      .grilla__Index--main .astrodata_index p {
+        font-size: small;
+        width: 80%;
+        text-align: center;
+        align-items: center; }
+    .grilla__Index--main .queEsastrologia {
       display: flex;
       flex-direction: column;
       padding-top: 30px;
-      align-items: center;
-    }
-    .queEsastrologia p{
-      text-align: center;
-    }
-    .queEsastrologia h2{
-      letter-spacing: 5px;
-    }
-    .secciondos_index{
+      align-items: center; }
+    .grilla__Index--main .secciondos_index {
       display: flex;
       flex-direction: column;
       font-size: small;
       padding-top: 20px;
       row-gap: 50px;
       align-items: center;
-      justify-content: space-around;
-    }
-    .secciondos_index h3 {
-      letter-spacing: 5px;
-      font-size: 20px;
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      width: 80%;
-      margin: auto;
-    }
-    #parasabermas{
+      justify-content: space-around; }
+      .grilla__Index--main .secciondos_index h3 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 20px 0px 10px 0px;
+        margin-top: auto;
+        color: color #f371de;
+        font-size: 20px; }
+    .grilla__Index--main #parasabermas {
       font-size: small;
       padding: 15px;
-      margin: 15px;
-    }
+      margin: 15px; } }
 
+@media only screen and (min-width: 401px) {
+  .grilla__Index--main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .grilla__Index--main .astrodata_index {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+    .grilla__Index--main .queEsastrologia {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      align-items: center; }
+    .grilla__Index--main .secciondos_index {
+      display: flex;
+      flex-direction: column;
+      font-size: small;
+      padding-top: 20px;
+      row-gap: 50px;
+      align-items: center;
+      justify-content: space-around; }
+      .grilla__Index--main .secciondos_index h3 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 20px 0px 10px 0px;
+        margin-top: auto;
+        color: color #f371de;
+        font-size: 20px;
+        width: 80%; }
+    .grilla__Index--main #parasabermas {
+      font-size: small;
+      padding: 15px;
+      margin: 15px; } }
 
-  /*------------------------------------- QUIEN SOY ------------------------------------*/
-
-  .biografia {
-    background-image: url(../img/quienSoyfondo400px.png);
-    padding: 20px;
-    margin-bottom: 50px;
-  }
-  .biografia h2{
-    font-size: 30px;
-    padding-top: 90px;
-  }
-  .biografia p {
-    padding: 10px;
-    font-size: 15px;
-  }
-
-
-  
-
-    /*------------------------------------- SERVICIOS ------------------------------------*/  
-
-    .serviciosIntro h2{
-      padding-top: 100px;
-      font-size: 40px;
-    }
-    #aclaracionCovid {
-      margin-top: 50px;
-      margin-bottom: 80px;
-    }
-    #talleresLink {
-      padding: 30px;
-      margin: 100px 0px 40px;
-      font-size: 30px;
-    }
-    #consultoriaLink {
-      padding: 10px;
-      margin: 100px 0px 40px;
-      font-size: 30px;
-    }
-    table, tr, td, th {
-      max-width: 80%;
-    }
-    table li {
-      padding: 10px;
-    }
-    td{
-      padding: 10px;
-      font-size: 15px;
-    }
-    th {
-      padding: 10px;
-      font-size: 15px;
-    }
-    #aclaracionesServicios {
-      padding-top: 40px;
-      padding-bottom: 80px;
-      max-width: 60%;
-    }
-    #aclaracionesServicios p {
-      padding: 10px;
-    }
-  }
-@media only screen and (min-width: 600px){
-  h1{
-    font-size: 50px;
-  }  
-  h2{
-    font-size: 35px;
-  }
-
-/*-----------------------------------------INDEX------------------------------------*/
-
-  .astrodata_index{
+@media only screen and (min-width: 600px) {
+  .astrodata_index {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
-                         "Seccion1-3_Index Seccion1-2_Index";
-    align-items: baseline;  
-    width: 90%;                 
-  }
-  .astrodata_index h2{
-    grid-area: Seccion1-1_Index;
-    font-size: 55px;
-    align-items: center;
-    font-weight: lighter;
-    text-align:left;
-    padding: 10px;
-  }
-  .astrodata_index p{
-    grid-area: Seccion1-3_Index;
-    font-size: large;
-    width: 80%;
-    text-align: center;
-    padding-top: 5px;
-  }
-  .queEsastrologia{
-    padding-top: 50px;
-
-  }
-  .secciondos_index{
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
+    align-items: baseline;
+    width: 90%; }
+    .astrodata_index h2 {
+      grid-area: Seccion1-1_Index;
+      font-size: 55px;
+      align-items: center;
+      font-weight: lighter;
+      text-align: left;
+      padding: 10px; }
+    .astrodata_index p {
+      grid-area: Seccion1-3_Index;
+      font-size: large;
+      width: 80%;
+      text-align: center;
+      padding-top: 5px; }
+  .queEsastrologia {
+    padding-top: 50px; }
+  .secciondos_index {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: baseline;
-  }
-  .secciondos_index h3 {
-    font-size: 50px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    width: 80%;
-    margin: auto;
-  }
-  #parasabermas{
+    justify-content: baseline; }
+    .secciondos_index h3 {
+      text-align: center;
+      letter-spacing: none;
+      padding: 20px 0px 10px 0px;
+      margin-top: auto;
+      color: color #f371de;
+      font-size: 50px;
+      margin: auto; }
+  #parasabermas {
     font-size: 25px;
     padding: 15px;
-    margin: 15px;
-  }
+    margin: 15px; } }
 
-
-  /*------------------------------------- QUIEN SOY ------------------------------------*/
-
-  .biografia {
-    background-image: url(../img/quienSoyfondo600px.png);
-    padding: 20px;
-    margin-bottom: 50px;
-  }
-  .biografia h2{
-    font-size: 50px;
-    padding-top: 90px;
-  }
-  .biografia p {
-    padding: 10px;
-    font-size: 20px;
-  }
-
-
-  /*------------------------------------- SERVICIOS ------------------------------------*/  
-
-  .serviciosIntro p li{
-    font-size: 20px;
-  }
-  .serviciosIntro h2{
-    padding-top: 100px;
-  }
-  #aclaracionCovid {
-    margin-top: 50px;
-    margin-bottom: 80px;
-    font-size: 15px;
-  }
-  #talleresLink {
-    padding: 10px;
-    margin: 100px 0px 40px;
-    font-size: 50px;
-  }
-  #consultoriaLink {
-    padding: 10px;
-    margin: 100px 0px 40px;
-    font-size: 50px;
-  }
-  table, tr, td, th {
-    max-width: 80%;
-    font-size: 20px;
-  }
-  table li {
-    padding: 10px;
-  }
-  td{
-    padding: 30px;
-  }
-  th {
-    padding: 30px;
-  }
-  #aclaracionesServicios {
-    padding-top: 40px;
-    padding-bottom: 80px;
-    max-width: 60%;
-    font-size: 15px;
-  }
-  #aclaracionesServicios p {
-    padding: 10px;
-    font-size: 15px;
-  }
-
-
-}
-@media only screen and (min-width: 1000px){
-
-/*-------------------------------------INDEX---------------------------------*/
-  .astrodata_index{
+@media only screen and (min-width: 1000px) {
+  .astrodata_index {
     grid-area: seccion1;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
-                         "Seccion1-3_Index Seccion1-2_Index";
-    margin-top: 40px;
-  }
-  .astrodata_index h2{
-    grid-area: Seccion1-1_Index;
-    font-size: 120px;
-    align-items: top;
-    font-weight: lighter;
-    text-align:left;
-    padding: 10px;
-    margin-bottom: 5px;
-  }
-  #imagen_index{
-    grid-area:  Seccion1-2_Index;
-  }
-  .astrodata_index p{
-    grid-area: Seccion1-3_Index;
-    font-size: large;
-    width: 80%;
-    text-align: center;
-    padding: 10px 20px 10px 30px;
-  }
-  .queEsastrologia{
-    padding-top: 50px;
-  }
-  .contenedor_cards{
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
+    margin-top: 40px; }
+    .astrodata_index h2 {
+      grid-area: Seccion1-1_Index;
+      text-align: center;
+      letter-spacing: 5px;
+      padding: 10px;
+      margin-top: 60px;
+      color: color #f371de;
+      font-size: 120px;
+      font-weight: lighter; }
+    .astrodata_index #imagen_index {
+      grid-area: Seccion1-2_Index; }
+    .astrodata_index p {
+      grid-area: Seccion1-3_Index;
+      font-size: large;
+      width: 80%;
+      text-align: center;
+      padding: 10px 20px 10px 30px; }
+  .queEsastrologia {
+    padding-top: 50px; }
+  .secciondos_index .contenedor_cards {
     display: flex;
-    justify-content: space-evenly;
-  }
-  .card-body{
-    width: 300px;
-  }
-  #parasabermas{
+    justify-content: space-evenly; }
+  .secciondos_index .card-body {
+    width: 300px; }
+  #parasabermas {
     grid-area: seccion4;
     font-size: 20px;
     padding: 15px;
-    margin: 15px;
-  }
+    margin: 15px; } }
 
+.biografia {
+  background-image: url(../img/quienSoyfondo.png);
+  background-position: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  padding: 20px;
+  text-align: center; }
+  .biografia h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-top: 60px;
+    color: color #f371de;
+    font-size: 45px; }
 
-  /*------------------------------------- QUIEN SOY ------------------------------------*/
+@media only screen and (max-width: 400px) {
+  .biografia {
+    background-image: url(../img/quienSoyfondo400px);
+    padding: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 30px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 15px; } }
 
+@media only screen and (min-width: 401px) {
   .biografia {
     padding: 20px;
-    margin-bottom: 50px;
-  }
-  .biografia h2{
-    font-size: 90px;
-    padding-top: 110px;
-  }
-  .biografia p {
-    padding: 20px;
-    font-size: 40px;
-  }
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 30px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 15px; } }
 
-  /*---------------------------------- CONTACTO -----------------------------------*/
-  form {
-    max-width: 80%;
-    padding-bottom: 100px;
-    font-size: 20px;
-  }
-  
-  legend {
-    font-size: 25px;
-    padding: 10%;
-    border-radius: 50px;
-  }
+@media only screen and (min-width: 600px) {
+  .biografia {
+    background-image: url(../img/quienSoyfondo600px.png);
+    padding: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 50px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 20px; } }
 
-  
-  fieldset {
-    border-width: 3px;
-    border-radius: 5px;
-  }
-  
-  .contacto__grid--fieldsetNombre {
-    margin-bottom: 50px;
-    grid-area: nombreFieldset;
-  }
-  
-  .contacto__grid--fieldsetContacto {
-    background-image: url(../img/img_formNombre.png);
-    grid-area: contactoFieldset;
-  }
-  
-  #nombre {
-    font: 25px;
-    padding: 4px;
-    margin: 10px;
-    width: 300px;
-  }
-  
-  .form-select{
-    font: 25px;
-    padding: 4px;
-    margin: 10px;
-    width: 300px;
-  }
-  
-  #nacimiento {
-    font: 25px;
-    padding: 4px;
-    margin: 10px;
-    width: 160px;
-    margin-left: 100px;
-  }
-  
-  #email {
-    font-size: 25px;
-    padding: 4px;
-    margin: 10px;
-    width: 300px;
-  }
-  #motivoconsulta {
-    padding: 4px;
-    border-radius: 3px;
-    margin: 10px;
-    width: 300px;
-  }
-  textarea {
-    border-radius: 5px;
-    margin: 10px;
-    width: 400px;
-    height: 200px;
-  }
-  .contacto__grid--fieldsetBotones{
-      grid-area: botonesFieldset;
-  }
-  #reset {
-    font-size: 20px;
+@media only screen and (min-width: 1000px) {
+  .biografia {
     padding: 20px;
-    border-radius: 15px;
-    margin: 10px;
-  }
-  .enviar {
-    font-size: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 90px;
+      padding-top: 110px; }
+    .biografia p {
+      padding: 20px;
+      font-size: 40px; } }
+
+.biografia {
+  background-image: url(../img/quienSoyfondo.png);
+  background-position: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  padding: 20px;
+  text-align: center; }
+  .biografia h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-top: 60px;
+    color: color #f371de;
+    font-size: 45px; }
+
+@media only screen and (max-width: 400px) {
+  .biografia {
+    background-image: url(../img/quienSoyfondo400px);
     padding: 20px;
-    border-radius: 15px;
-    margin: 10px;
-  }
-}
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 30px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 15px; } }
+
+@media only screen and (min-width: 401px) {
+  .biografia {
+    padding: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 30px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 15px; } }
+
+@media only screen and (min-width: 600px) {
+  .biografia {
+    background-image: url(../img/quienSoyfondo600px.png);
+    padding: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 50px;
+      padding-top: 90px; }
+    .biografia p {
+      padding: 10px;
+      font-size: 20px; } }
+
+@media only screen and (min-width: 1000px) {
+  .biografia {
+    padding: 20px;
+    margin-bottom: 50px; }
+    .biografia h2 {
+      font-size: 90px;
+      padding-top: 110px; }
+    .biografia p {
+      padding: 20px;
+      font-size: 40px; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/ep_naturalblack.png);
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: initial;
+  width: 100%; }
+  body .navbar {
+    height: 0%; }
+    body .navbar .container-fluid {
+      position: fixed;
+      top: 10px;
+      height: fit-content;
+      background-image: url(../img/ep_naturalblack.png); }
+      body .navbar .container-fluid #logo {
+        padding: 10px;
+        padding-right: 20px; }
+  body p {
+    color: color #ddd;
+    font-size: 20px; }
+  body li {
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    margin: auto;
+    color: #ddd;
+    font-size: 20px; }
+
+.redes_footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10px;
+  color: #ffef78; }
+  .redes_footer p {
+    align-items: center; }
+  .redes_footer a {
+    text-decoration: none;
+    color: #ffef78; }
+  .redes_footer a:hover {
+    color: #ddd; }
+
+@media only screen and (max-width: 400px) {
+  h2 {
+    font-size: 20px; }
+  .redes_footer p {
+    font-size: 10px; }
+  .redes_footer a {
+    font-size: 10px; }
+  .iconos {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 401px) {
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 30px; }
+  .redes_footer p {
+    font-size: 10px;
+    padding: 10px; }
+  .redes_footer a {
+    font-size: 10px; }
+  .iconos {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 35px; }
+  .redes_footer p {
+    font-size: 15px;
+    padding: 40px; }
+  .redes_footer a {
+    font-size: 15px; }
+  .iconos {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 1000px) {
+  h2 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-top: 60px;
+    color: color #f371de;
+    font-size: 45px; }
+  h3 {
+    text-align: center;
+    letter-spacing: none;
+    padding: 10px;
+    margin-top: 20px;
+    color: color #f371de;
+    font-size: 30px; }
+  .redes_footer p {
+    font-size: 15px;
+    padding: 20px; }
+  .redes_footer a {
+    font-size: 15px; }
+  .iconos {
+    font-size: 16px; } }
