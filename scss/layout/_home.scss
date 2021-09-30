@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "layout/_variables.scss";
 
 
 .grilla__Index {
@@ -58,4 +58,61 @@
 }
 
 
-
+@media only screen and (max-width: 400px){
+    #imagen_index{
+        width: 200px;
+      }
+    .grilla__Index--main {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .astrodata_index{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            h2{
+                font-size: 34px;
+                align-items: center;
+                font-weight: lighter;
+                letter-spacing: 5px;
+            }
+            p{
+                font-size: small;
+                width: 80%;
+                text-align: center;
+                align-items: center;
+            }
+        }
+        .queEsastrologia{
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            align-items: center;
+        }
+        .secciondos_index{
+            display: flex;
+            flex-direction: column;
+            font-size: small;
+            padding-top: 20px;
+            row-gap: 50px;
+            align-items: center;
+            justify-content: space-around;
+            h3 {
+                letter-spacing: 5px;
+                font-size: 20px;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                margin: auto;
+            }
+        }
+        #parasabermas{
+            font-size: small;
+            padding: 15px;
+            margin: 15px;
+        }
+    }
+}

@@ -1,167 +1,9 @@
 
 /*--------------------------------------------------MEDIA QUERY------------------------------------------------------------*/
 
-@media only screen and (max-width: 400px){
-  h2{
-    font-size: 20px;
-  }
-  /*-------------------------------------INDEX---------------------------------*/
-  
-  #imagen_index{
-    width: 200px;
-  }
-  .grilla__Index--main {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .astrodata_index{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .astrodata_index h2{
-    font-size: 34px;
-    align-items: center;
-    font-weight: lighter;
-    letter-spacing: 5px;
-  }
-  .astrodata_index p{
-    font-size: small;
-    width: 80%;
-    text-align: center;
-    align-items: center;
-  }
-  .queEsastrologia{
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    align-items: center;
-  }
-  .queEsastrologia p{
-    text-align: center;
-  }
-  .queEsastrologia h2{
-    letter-spacing: 5px;
-  }
-  .secciondos_index{
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-    padding-top: 20px;
-    row-gap: 50px;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .secciondos_index h3 {
-    letter-spacing: 5px;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: auto;
-  }
-  #parasabermas{
-    font-size: small;
-    padding: 15px;
-    margin: 15px;
-  }
-
-
-  /*------------------------------------- QUIEN SOY ------------------------------------*/
-
-  .biografia {
-    background-image: url(../img/quienSoyfondo300px.png);
-    padding: 20px;
-    margin-bottom: 50px;
-  }
-  .biografia h2{
-    font-size: 30px;
-    padding-top: 90px;
-  }
-  .biografia p {
-    padding: 10px;
-    font-size: 15px;
-  }
-
-    /*------------------------------------- SERVICIOS ------------------------------------*/  
-
-    .serviciosIntro h2{
-      padding-top: 100px;
-      font-size: 40px;
-    }
-    #aclaracionCovid {
-      margin-top: 50px;
-      margin-bottom: 80px;
-    }
-    #talleresLink {
-      padding: 30px;
-      margin: 100px 0px 40px;
-      font-size: 30px;
-    }
-    #consultoriaLink {
-      padding: 10px;
-      margin: 100px 0px 40px;
-      font-size: 30px;
-    }
-    table, tr, td, th {
-      max-width: 80%;
-    }
-    table li {
-      padding: 10px;
-    }
-    td{
-      padding: 10px;
-      font-size: 15px;
-    }
-    th {
-      padding: 10px;
-      font-size: 15px;
-    }
-    #aclaracionesServicios {
-      padding-top: 40px;
-      padding-bottom: 80px;
-      max-width: 60%;
-    }
-    #aclaracionesServicios p {
-      padding: 10px;
-    }
-
-
-/*-------------------------------------CONTENIDO------------------------------------*/
-  .contenido__externo h3{
-    padding: 5px;
-  }
-
-  .contenido__externo--Spotify iframe{
-    padding-bottom: 15px;
-  }
-
-/*-------------------------------------CONTACTO------------------------------------*/
-
-
-/*-------------------------------------FOOTER------------------------------------*/
-  .redes_footer p{
-    font-size: 10px;
-  }
-  .redes_footer a{
-    font-size: 10px;
-  }
-  .iconos {
-    font-size: 16px;
-  }
-}
 
 @media only screen and (min-width: 401px){
-  h1{
-    font-size: 30px;
-  }  
-  h2{
-    font-size: 30px;
-  }
+
     /*-------------------------------------INDEX---------------------------------*/
     .grilla__Index--main {
       padding-top: 50px;
@@ -286,28 +128,7 @@
     #aclaracionesServicios p {
       padding: 10px;
     }
-
-
-  /*-------------------------------------CONTENIDO------------------------------------*/
-
-
-  /*-------------------------------------CONTACTO------------------------------------*/
-
-
-
-  /*-------------------------------------FOOTER------------------------------------*/
-    .redes_footer p{
-      font-size: 10px;
-      padding: 10px;
-    }
-    .redes_footer a{
-      font-size: 10px;
-    }
-    .iconos {
-      font-size: 16px;
-    }
-}
-
+  }
 @media only screen and (min-width: 600px){
   h1{
     font-size: 50px;
@@ -432,29 +253,10 @@
     font-size: 15px;
   }
 
-/*-------------------------------------CONTENIDO------------------------------------*/
 
-
-/*-------------------------------------CONTACTO------------------------------------*/
-
-
-
-/*-------------------------------------FOOTER------------------------------------*/
-  .redes_footer p{
-    font-size: 15px;
-    padding: 40px;
-  }
-  .redes_footer a{
-    font-size: 15px;
-  }
-  .iconos {
-    font-size: 16px;
-  }
 }
 @media only screen and (min-width: 1000px){
-  h2{
-    font-size: 40px;
-  }
+
 /*-------------------------------------INDEX---------------------------------*/
   .astrodata_index{
     grid-area: seccion1;
@@ -600,25 +402,5 @@
     padding: 20px;
     border-radius: 15px;
     margin: 10px;
-  }
-
-
-/*-------------------------------------CONTENIDO------------------------------------*/
-
-
-/*-------------------------------------CONTACTO------------------------------------*/
-
-
-
-/*-------------------------------------FOOTER------------------------------------*/
-  .redes_footer p{
-    font-size: 15px;
-    padding: 20px;
-  }
-  .redes_footer a{
-    font-size: 15px;
-  }
-  .iconos {
-    font-size: 16px;
   }
 }

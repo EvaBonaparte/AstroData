@@ -13,3 +13,21 @@
         @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
     }
 }
+
+@media only screen and (max-width: 400px){
+
+    .biografia {
+        background-image: url(../img/quienSoyfondo300px.png);
+        padding: 20px;
+        margin-bottom: 50px;
+        h2{
+            font-size: 30px;
+            padding-top: 90px;
+        }
+        p {
+            padding: 10px;
+            font-size: 15px;
+        }
+    }
+}
+  
