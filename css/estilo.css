@@ -6,9 +6,7 @@ form {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 45% 45% 10%;
-    grid-template-areas: "nombreFieldset nombreFieldset"
- "contactoFieldset contactoFieldset"
- "botonesFieldset botonesFieldset";
+    grid-template-areas: "nombreFieldset nombreFieldset" "contactoFieldset contactoFieldset" "botonesFieldset botonesFieldset";
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -35,7 +33,7 @@ form {
     background-color: #949494;
     border: none;
     border-radius: 3px; }
-  form .form-select {
+  form .listaPronombres {
     font: "Merriweather", serif;
     color: #0f0f1d;
     background-color: #949494;
@@ -99,20 +97,24 @@ form {
     font-size: 20px; }
     form legend {
       font-size: 25px;
-      padding: 10%;
-      border-radius: 50px; }
+      padding: 10px;
+      border-radius: 5px; }
     form fieldset {
       border-width: 3px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px; }
+      form fieldset label {
+        padding: 10px; }
       form fieldset .contacto__grid--fieldsetNombre {
-        margin-bottom: 50px;
+        margin-bottom: 5px;
         grid-area: nombreFieldset; }
         form fieldset .contacto__grid--fieldsetNombre #nombre {
           font: 25px;
           padding: 4px;
           margin: 10px;
           width: 300px; }
-        form fieldset .contacto__grid--fieldsetNombre .form-select {
+        form fieldset .contacto__grid--fieldsetNombre .listaPronombres {
           font: 25px;
           padding: 4px;
           margin: 10px;
@@ -155,45 +157,30 @@ form {
           margin: 10px; } }
 
 .contenido__externo {
-  display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 5% 50% 20%;
-  grid-template-areas: "tituloContenido"
- "contenidototal"
- "contenidoSpotifytotal";
   justify-content: space-around;
   align-items: center;
-  row-gap: 10px;
-  column-gap: 10px;
   padding: 15px;
   text-align: center; }
   .contenido__externo h3 {
     background-color: #20485e69;
     border-radius: 15px; }
   .contenido__externo .contenido__externo--Titulo {
-    grid-area: tituloContenido; }
-  .contenido__externo .contenido__externo--InstagramPost {
-    grid-area: contenidoInstagramtotal;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-    .contenido__externo .contenido__externo--InstagramPost .instagram-media {
-      width: 260px;
-      margin: 5px; }
+    margin-top: 100px; }
   .contenido__externo .contenido__externo--Spotify {
-    grid-area: contenidoSpotifytotal;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-bottom: 100px; }
     .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin: 10px; }
       .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist .contenido__externo--SpotifyPlaylist iframe {
         width: 260px;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin: auto; }
 
 @media only screen and (max-width: 400px) {
   .contenido__externo h3 {
@@ -205,10 +192,7 @@ form {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10% 34% 48% 8%;
-  grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4"; }
+  grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4"; }
   .grilla__Index .astrodata_index {
     grid-area: seccion1;
     align-items: baseline; }
@@ -352,8 +336,7 @@ form {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
- "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     align-items: baseline;
     width: 90%; }
     .astrodata_index h2 {
@@ -396,8 +379,7 @@ form {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
- "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     margin-top: 40px; }
     .astrodata_index h2 {
       grid-area: Seccion1-1_Index;
@@ -676,7 +658,7 @@ body {
     height: 0%; }
     body .navbar .container-fluid {
       position: fixed;
-      top: 10px;
+      padding-top: 3rem;
       height: fit-content;
       background-image: url(../img/ep_naturalblack.png); }
       body .navbar .container-fluid #logo {
@@ -698,17 +680,12 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 10px;
-  color: #ffef78; }
-  .redes_footer p {
-    align-items: center; }
-  .redes_footer a {
-    text-decoration: none;
-    color: #ffef78; }
-  .redes_footer a:hover {
-    color: #ddd; }
+  margin: 20px 15px 10px 15px;
+  row-gap: 10px; }
+  .redes_footer .fa {
+    margin: 20px 15px 10px 15px; }
+    .redes_footer .fa .fa:hover {
+      opacity: 0.7; }
 
 @media only screen and (max-width: 400px) {
   h2 {
