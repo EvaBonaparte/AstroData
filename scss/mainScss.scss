@@ -21,11 +21,11 @@ body{
 
     .navbar{
         height: 0%;
-      .container-fluid{
-        position: fixed;
-        top: 10px;
-        height:fit-content;
-        background-image: url(../img/ep_naturalblack.png);
+        .container-fluid {
+            position: fixed;
+            padding-top: 3rem;
+            height: fit-content;
+            background-image: url(../img/ep_naturalblack.png);
         #logo{
             padding: 10px;
             padding-right: 20px;
@@ -48,21 +48,15 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
+    margin: 20px 15px 10px 15px;
     row-gap: 10px;
-    color: #ffef78;
-    p{
-        align-items: center;
+    .fa{
+        margin: 20px 15px 10px 15px;
+        .fa:hover {
+            opacity: 0.7;
+        }
     }
-    a {
-        text-decoration: none;
-        color: #ffef78;  
-    }
-    a:hover {
-        color: #ddd;
-      }
-  }
+}
 
 
 @media only screen and (max-width: 400px){

@@ -1,18 +1,20 @@
 form {
   margin: auto; }
   form legend {
-    background-color: color #a5218f; }
+    background-color: #a5218f; }
   form .contacto__grid {
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 45% 45% 10%;
-    grid-template-areas: "nombreFieldset nombreFieldset" "contactoFieldset contactoFieldset" "botonesFieldset botonesFieldset";
+    grid-template-areas: "nombreFieldset nombreFieldset"
+ "contactoFieldset contactoFieldset"
+ "botonesFieldset botonesFieldset";
     justify-content: center;
     text-align: center;
     align-items: center;
-    color: color #ddd; }
+    color: #ddd; }
   form fieldset {
-    border-color: color #949494; }
+    border-color: #949494; }
   form .contacto__grid--fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
     grid-area: nombreFieldset;
@@ -30,65 +32,65 @@ form {
   form #nombre {
     font: "Merriweather", serif;
     color: #0f0f1d;
-    background-color: color #949494;
+    background-color: #949494;
     border: none;
     border-radius: 3px; }
   form .form-select {
     font: "Merriweather", serif;
     color: #0f0f1d;
-    background-color: color #949494;
+    background-color: #949494;
     border: none;
     border-radius: 3px; }
   form #nacimiento {
     font: "Merriweather", serif;
-    color: color #0f0f1d;
-    background-color: color #949494;
+    color: #0f0f1d;
+    background-color: #949494;
     border: none;
     border-radius: 3px; }
   form #email {
     font: "Merriweather", serif;
-    color: color #0f0f1d;
-    background-color: color #949494;
+    color: #0f0f1d;
+    background-color: #949494;
     border: none;
     border-radius: 3px; }
   form #motivoconsulta {
     font: "Merriweather", serif;
-    color: color #0f0f1d;
-    background-color: color #949494;
+    color: #0f0f1d;
+    background-color: #949494;
     border: none;
     border-radius: 3px; }
   form textarea {
     font: "Merriweather", serif;
     border: none;
     border-radius: 5px;
-    background-color: color #949494;
-    color: color #0f0f1d; }
+    background-color: #949494;
+    color: #0f0f1d; }
   form .contacto__grid--fieldsetBotones {
     grid-area: botonesFieldset; }
   form #reset {
-    background-color: color #ddd;
-    color: color #062c41;
+    background-color: #ddd;
+    color: #062c41;
     font-family: "Merriweather", serif;
     border: none;
     border-radius: 15px; }
   form #reset:hover {
-    background-color: color #ffef78; }
+    background-color: #ffef78; }
   form #reset:active {
-    background-color: color #f371de; }
+    background-color: #f371de; }
   form .enviar {
-    background-color: color #ddd;
-    color: color #062c41;
+    background-color: #ddd;
+    color: #062c41;
     font-family: "Merriweather", serif;
     border: none;
     border-radius: 15px; }
   form .enviar:hover {
-    background-color: color #ffef78; }
+    background-color: #ffef78; }
   form .enviar:active {
-    background-color: color #f371de; }
+    background-color: #f371de; }
   form .modal-title {
-    color: color #0f0f1d; }
+    color: #0f0f1d; }
   form .modal-body {
-    color: color #0f0f1d; }
+    color: #0f0f1d; }
 
 @media only screen and (min-width: 1000px) {
   form {
@@ -156,7 +158,9 @@ form {
   display: grid;
   grid-template-columns: 90%;
   grid-template-rows: 5% 50% 20%;
-  grid-template-areas: "tituloContenido" "contenidoInstagramtotal" "contenidoSpotifytotal";
+  grid-template-areas: "tituloContenido"
+ "contenidototal"
+ "contenidoSpotifytotal";
   justify-content: space-around;
   align-items: center;
   row-gap: 10px;
@@ -201,7 +205,10 @@ form {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10% 34% 48% 8%;
-  grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4"; }
+  grid-template-areas: "seccion1"
+ "seccion2"
+ "seccion3"
+ "seccion4"; }
   .grilla__Index .astrodata_index {
     grid-area: seccion1;
     align-items: baseline; }
@@ -217,7 +224,7 @@ form {
       letter-spacing: 5px;
       padding: 10px;
       margin-top: 60px;
-      color: color #f371de;
+      color: #f371de;
       font-size: 45px; }
     .grilla__Index .queEsastrologia p {
       text-align: inherit;
@@ -237,7 +244,7 @@ form {
       letter-spacing: 5px;
       padding: 5px;
       margin-top: auto;
-      color: color #a5218f;
+      color: #a5218f;
       font-size: 25px; }
   .grilla__Index #parasabermas {
     grid-area: seccion4;
@@ -269,7 +276,7 @@ form {
         letter-spacing: 5px;
         padding: auto;
         margin-top: auto;
-        color: color #f371de;
+        color: #f371de;
         font-size: 34px;
         font-weight: lighter; }
       .grilla__Index--main .astrodata_index p {
@@ -295,7 +302,7 @@ form {
         letter-spacing: 5px;
         padding: 20px 0px 10px 0px;
         margin-top: auto;
-        color: color #f371de;
+        color: #f371de;
         font-size: 20px; }
     .grilla__Index--main #parasabermas {
       font-size: small;
@@ -332,7 +339,7 @@ form {
         letter-spacing: 5px;
         padding: 20px 0px 10px 0px;
         margin-top: auto;
-        color: color #f371de;
+        color: #f371de;
         font-size: 20px;
         width: 80%; }
     .grilla__Index--main #parasabermas {
@@ -345,7 +352,8 @@ form {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
+ "Seccion1-3_Index Seccion1-2_Index";
     align-items: baseline;
     width: 90%; }
     .astrodata_index h2 {
@@ -374,7 +382,7 @@ form {
       letter-spacing: none;
       padding: 20px 0px 10px 0px;
       margin-top: auto;
-      color: color #f371de;
+      color: #f371de;
       font-size: 50px;
       margin: auto; }
   #parasabermas {
@@ -388,7 +396,8 @@ form {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
+ "Seccion1-3_Index Seccion1-2_Index";
     margin-top: 40px; }
     .astrodata_index h2 {
       grid-area: Seccion1-1_Index;
@@ -396,7 +405,7 @@ form {
       letter-spacing: 5px;
       padding: 10px;
       margin-top: 60px;
-      color: color #f371de;
+      color: #f371de;
       font-size: 120px;
       font-weight: lighter; }
     .astrodata_index #imagen_index {
@@ -434,7 +443,7 @@ form {
     letter-spacing: 5px;
     padding: 10px;
     margin-top: 60px;
-    color: color #f371de;
+    color: #f371de;
     font-size: 45px; }
 
 @media only screen and (max-width: 400px) {
@@ -483,68 +492,172 @@ form {
       padding: 20px;
       font-size: 40px; } }
 
-.biografia {
-  background-image: url(../img/quienSoyfondo.png);
-  background-position: 100%;
-  background-repeat: none;
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: center;
-  padding: 20px;
-  text-align: center; }
-  .biografia h2 {
-    text-align: center;
-    letter-spacing: 5px;
+.serviciosIntro h2 {
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin-top: 60px;
+  color: #f371de;
+  font-size: 45px; }
+
+.serviciosIntro li {
+  text-align: center;
+  list-style-type: none;
+  padding: 5px;
+  margin: auto;
+  color: #ddd;
+  font-size: 20px; }
+
+.serviciosIntro p {
+  color: #949494;
+  font-size: 15px;
+  font-style: italic; }
+
+.seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
+  color: #ffef78;
+  text-align: center;
+  font-size: 50px; }
+
+.seccion_Servicios table tr th {
+  color: #ddd;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd; }
+
+.seccion_Servicios table tr td a {
+  color: #f371de;
+  text-decoration: none; }
+
+.seccion_Servicios table tr td a:hover {
+  text-decoration: underline; }
+
+.seccion_Servicios table tr td .collapsible {
+  color: #a5218f;
+  cursor: pointer;
+  padding: 18px;
+  width: 70px;
+  border: #ffef78;
+  text-align: left;
+  outline: none;
+  font-size: 15px; }
+  .seccion_Servicios table tr td .collapsible .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    width: auto; }
+  .seccion_Servicios table tr td .collapsible .collapsible:hover {
+    background-color: #062c41; }
+
+#aclaracionesServicios {
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+  color: #949494;
+  font-size: 15px; }
+  #aclaracionesServicios p {
+    font-size: 15px; }
+
+@media only screen and (max-width: 400px) {
+  .serviciosIntro h2 {
+    padding-top: 100px;
+    font-size: 40px; }
+  .serviciosIntro #aclaracionCovid {
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
+    padding: 30px;
+    margin: 100px 0px 40px;
+    font-size: 30px; }
+  .seccion_Servicios #consultoriaLink {
     padding: 10px;
-    margin-top: 60px;
-    color: color #f371de;
-    font-size: 45px; }
-
-@media only screen and (max-width: 400px) {
-  .biografia {
-    background-image: url(../img/quienSoyfondo400px);
-    padding: 20px;
-    margin-bottom: 50px; }
-    .biografia h2 {
-      font-size: 30px;
-      padding-top: 90px; }
-    .biografia p {
+    margin: 100px 0px 40px;
+    font-size: 30px; }
+  .seccion_Servicios table {
+    max-width: 80%; }
+    .seccion_Servicios table tr th {
       padding: 10px;
-      font-size: 15px; } }
+      font-size: 15px; }
+    .seccion_Servicios table tr td {
+      padding: 10px;
+      font-size: 15px; }
+      .seccion_Servicios table tr td li {
+        padding: 10px; }
+  #aclaracionesServicios {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    max-width: 60%; }
+    #aclaracionesServicios p {
+      padding: 10px; } }
 
 @media only screen and (min-width: 401px) {
-  .biografia {
-    padding: 20px;
-    margin-bottom: 50px; }
-    .biografia h2 {
-      font-size: 30px;
-      padding-top: 90px; }
-    .biografia p {
+  .serviciosIntro h2 {
+    padding-top: 100px;
+    font-size: 40px; }
+  .serviciosIntro #aclaracionCovid {
+    margin-top: 50px;
+    margin-bottom: 80px; }
+  .seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
+    padding: 30px;
+    margin: 100px 0px 40px;
+    font-size: 30px; }
+  .seccion_Servicios #consultoriaLink {
+    padding: 10px;
+    margin: 100px 0px 40px;
+    font-size: 30px; }
+  .seccion_Servicios table {
+    max-width: 80%; }
+    .seccion_Servicios table li {
+      padding: 10px; }
+    .seccion_Servicios table tr td {
       padding: 10px;
-      font-size: 15px; } }
+      font-size: 15px; }
+    .seccion_Servicios table tr th {
+      padding: 10px;
+      font-size: 15px; }
+  #aclaracionesServicios {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    max-width: 60%; }
+    #aclaracionesServicios p {
+      padding: 10px; } }
 
 @media only screen and (min-width: 600px) {
-  .biografia {
-    background-image: url(../img/quienSoyfondo600px.png);
-    padding: 20px;
-    margin-bottom: 50px; }
-    .biografia h2 {
-      font-size: 50px;
-      padding-top: 90px; }
-    .biografia p {
+  .serviciosIntro h2 {
+    padding-top: 100px; }
+  .serviciosIntro li {
+    font-size: 20px; }
+  .serviciosIntro #aclaracionCovid {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 15px; }
+  .seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
+    padding: 10px;
+    margin: 100px 0px 40px;
+    font-size: 50px; }
+  .seccion_Servicios #consultoriaLink {
+    padding: 10px;
+    margin: 100px 0px 40px;
+    font-size: 50px; }
+  .seccion_Servicios table {
+    max-width: 80%;
+    font-size: 20px; }
+    .seccion_Servicios table li {
+      padding: 10px; }
+    .seccion_Servicios table tr td {
+      padding: 30px; }
+    .seccion_Servicios table tr th {
+      padding: 30px; }
+  #aclaracionesServicios {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    max-width: 60%;
+    font-size: 15px; }
+    #aclaracionesServicios p {
       padding: 10px;
-      font-size: 20px; } }
-
-@media only screen and (min-width: 1000px) {
-  .biografia {
-    padding: 20px;
-    margin-bottom: 50px; }
-    .biografia h2 {
-      font-size: 90px;
-      padding-top: 110px; }
-    .biografia p {
-      padding: 20px;
-      font-size: 40px; } }
+      font-size: 15px; } }
 
 * {
   padding: 0;
@@ -570,7 +683,7 @@ body {
         padding: 10px;
         padding-right: 20px; }
   body p {
-    color: color #ddd;
+    color: #ddd;
     font-size: 20px; }
   body li {
     text-align: center;
@@ -639,14 +752,14 @@ body {
     letter-spacing: 5px;
     padding: 10px;
     margin-top: 60px;
-    color: color #f371de;
+    color: #f371de;
     font-size: 45px; }
   h3 {
     text-align: center;
     letter-spacing: none;
     padding: 10px;
     margin-top: 20px;
-    color: color #f371de;
+    color: #f371de;
     font-size: 30px; }
   .redes_footer p {
     font-size: 15px;

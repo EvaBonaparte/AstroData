@@ -1,4 +1,4 @@
-@import "variabless.scss";
+@import "variables.scss";
 
 
 .serviciosIntro{
@@ -46,9 +46,24 @@
                 a:hover {
                     text-decoration: underline;
                 }
-                #collapseExample{
-                    padding: 5px;
-                    text-align: center;
+                .collapsible {
+                    color: $colorAlternativoTres;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 70px;
+                    border: $colorAlternativoDos;
+                    text-align: left;
+                    outline: none;
+                    font-size: 15px;
+                    .content {
+                    padding: 0 18px;
+                    display: none;
+                    overflow: hidden;
+                    width: auto;
+                    }
+                    .collapsible:hover {
+                        background-color: $colorAlternativoCinco;
+                    }
                 }
             }
         }

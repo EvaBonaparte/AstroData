@@ -125,14 +125,19 @@ form {
     font-size: 20px;
     legend {
       font-size: 25px;
-      padding: 10%;
-      border-radius: 50px;
+      padding: 10px;
+      border-radius: 5px;
     }  
     fieldset {
       border-width: 3px;
       border-radius: 5px;
+      padding: 10px;
+      margin: 20px;
+      label{
+        padding: 10px;
+      }
       .contacto__grid--fieldsetNombre {
-        margin-bottom: 50px;
+        margin-bottom: 5px;
         grid-area: nombreFieldset;
         #nombre {
           font: 25px;
