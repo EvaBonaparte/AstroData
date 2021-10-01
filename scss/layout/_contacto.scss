@@ -1,0 +1,201 @@
+@import "variables.scss";
+
+
+form {
+    margin: auto;
+  legend {
+    background-color: $colorAlternativoTres;
+  }
+  .contacto__grid{
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 45% 45% 10%;
+      grid-template-areas: "nombreFieldset nombreFieldset"
+                           "contactoFieldset contactoFieldset"
+                           "botonesFieldset botonesFieldset";
+      justify-content:center;
+      text-align: center;
+      align-items: center;
+      color: $colorParrafo;
+  }
+  fieldset {
+    border-color: $colorAclaraciones;
+  }
+  .contacto__grid--fieldsetNombre {
+    background-image: url(../img/img_formNombre.png);
+    grid-area: nombreFieldset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contacto__grid--fieldsetContacto {
+    background-image: url(../img/img_formNombre.png);
+    grid-area: contactoFieldset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #nombre {
+    font: "Merriweather", serif;
+    color: #0f0f1d;
+    background-color: $colorAclaraciones;
+    border: none;
+    border-radius: 3px;
+  }
+  .form-select {
+    font: "Merriweather", serif;
+    color: #0f0f1d;
+    background-color: $colorAclaraciones;
+    border: none;
+    border-radius: 3px;
+  }
+  #nacimiento {
+    font: "Merriweather", serif;
+    color: $colorAlternativoCuatro;
+    background-color: $colorAclaraciones;
+    border: none;
+    border-radius: 3px;
+  }
+  #email {
+    font: "Merriweather", serif;
+    color: $colorAlternativoCuatro;
+    background-color: $colorAclaraciones;
+    border: none;
+    border-radius: 3px;
+  }
+  #motivoconsulta {
+    font: "Merriweather", serif;
+    color: $colorAlternativoCuatro;
+    background-color: $colorAclaraciones;
+    border: none;
+    border-radius: 3px;
+  }
+  textarea {
+    font: "Merriweather", serif;
+    border: none;
+    border-radius: 5px;
+    background-color: $colorAclaraciones;
+    color: $colorAlternativoCuatro;
+  }
+  .contacto__grid--fieldsetBotones{
+      grid-area: botonesFieldset;
+  }
+  #reset {
+    background-color: $colorParrafo;
+    color: $colorAlternativoCinco;
+    font-family: "Merriweather", serif;
+    border: none;
+    border-radius: 15px;
+  }
+  #reset:hover {
+    background-color: $colorAlternativoDos;
+  }
+  #reset:active {
+    background-color: $colorAlternativoUno;
+  }
+  .enviar {
+    background-color: $colorParrafo;
+    color: $colorAlternativoCinco;
+    font-family: "Merriweather", serif;
+    border: none;
+    border-radius: 15px;
+  }
+  .enviar:hover {
+    background-color: $colorAlternativoDos;
+  }
+  .enviar:active {
+    background-color: $colorAlternativoUno;
+  }
+  .modal-title{
+    color: $colorAlternativoCuatro;
+  }
+  .modal-body{
+    color: $colorAlternativoCuatro;
+  }
+}
+
+
+@media only screen and (min-width: 1000px){
+
+  form {
+    max-width: 80%;
+    padding-bottom: 100px;
+    font-size: 20px;
+    legend {
+      font-size: 25px;
+      padding: 10px;
+      border-radius: 5px;
+    }  
+    fieldset {
+      border-width: 3px;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px;
+      label{
+        padding: 10px;
+      }
+      .contacto__grid--fieldsetNombre {
+        margin-bottom: 5px;
+        grid-area: nombreFieldset;
+        #nombre {
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px;
+        }
+        .form-select{
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px;
+        }
+        #nacimiento {
+          font: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 160px;
+          margin-left: 100px;
+        }
+        #email {
+          font-size: 25px;
+          padding: 4px;
+          margin: 10px;
+          width: 300px;
+        }
+      }
+      .contacto__grid--fieldsetContacto {
+        background-image: url(../img/img_formNombre.png);
+        grid-area: contactoFieldset;
+        #motivoconsulta {
+          padding: 4px;
+          border-radius: 3px;
+          margin: 10px;
+          width: 300px;
+        }
+        textarea {
+          border-radius: 5px;
+          margin: 10px;
+          width: 400px;
+          height: 200px;
+        }
+      }
+      .contacto__grid--fieldsetBotones{
+        grid-area: botonesFieldset;
+        #reset {
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          margin: 10px;
+        }
+        .enviar {
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

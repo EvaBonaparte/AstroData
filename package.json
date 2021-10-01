@@ -1,0 +1,30 @@
+{
+  "name": "astrodata_bonaparteeva",
+  "version": "1.0.0",
+  "description": "AstroData",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/mainScss.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvaBonaparte/AstroData.git"
+  },
+  "keywords": [
+    "Astro",
+    "Data"
+  ],
+  "author": "Eva Bonaparte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvaBonaparte/AstroData/issues"
+  },
+  "homepage": "https://github.com/EvaBonaparte/AstroData#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

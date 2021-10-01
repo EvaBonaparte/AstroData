@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.contenido__externo{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 5% 50% 20%;
+    grid-template-areas: "tituloContenido"
+                         "contenidoInstagramtotal"
+                         "contenidoSpotifytotal";
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 15px;
+    text-align: center;
+    h3{
+        background-color: #20485e69;
+        border-radius: 15px;
+    }
+    .contenido__externo--Titulo{
+        margin-top: 60px;
+        grid-area: tituloContenido;
+    }
+    .contenido__externo--InstagramPost{
+        grid-area: contenidoInstagramtotal;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .instagram-media{
+            align-items: center;
+            align-self: center;
+            max-width: 260px;
+            margin: 5px;
+        }
+    }
+
+    .contenido__externo--Spotify{
+        grid-area: contenidoSpotifytotal;
+        display: flex;
+        flex-direction: column;
+        .contenido__externo--SpotifyPlaylist{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .contenido__externo--SpotifyPlaylist iframe{
+                width: 260px;
+                justify-content: space-between;
+            }
+        }    
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .contenido__externo h3{
+      padding: 5px;
+    }
+  
+    .contenido__externo--Spotify iframe{
+      margin-bottom: 20px;
+    }
+}
