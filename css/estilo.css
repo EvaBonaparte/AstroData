@@ -4,25 +4,23 @@ form {
     background-color: #a5218f; }
   form .contacto__grid {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45% 10%;
-    grid-template-areas: "nombreFieldset nombreFieldset"
- "contactoFieldset contactoFieldset"
- "botonesFieldset botonesFieldset";
+    grid-template-columns: 85% 85%;
+    grid-template-rows: 85% 85% 10%;
+    grid-template-areas: "nombreFieldset nombreFieldset" "contactoFieldset contactoFieldset" "botonesFieldset botonesFieldset";
     justify-content: center;
     text-align: center;
     align-items: center;
     color: #ddd; }
   form fieldset {
     border-color: #949494; }
-  form .contacto__grid--fieldsetNombre {
+  form--fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
     grid-area: nombreFieldset;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  form .contacto__grid--fieldsetContacto {
+  form--fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
     grid-area: contactoFieldset;
     display: flex;
@@ -35,25 +33,13 @@ form {
     background-color: #949494;
     border: none;
     border-radius: 3px; }
-  form .form-select {
+  form .listaPronombres {
     font: "Merriweather", serif;
     color: #0f0f1d;
     background-color: #949494;
     border: none;
     border-radius: 3px; }
-  form #nacimiento {
-    font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: #949494;
-    border: none;
-    border-radius: 3px; }
-  form #email {
-    font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: #949494;
-    border: none;
-    border-radius: 3px; }
-  form #motivoconsulta {
+  form #nacimiento #email #motivoconsulta {
     font: "Merriweather", serif;
     color: #0f0f1d;
     background-color: #949494;
@@ -67,25 +53,15 @@ form {
     color: #0f0f1d; }
   form .contacto__grid--fieldsetBotones {
     grid-area: botonesFieldset; }
-  form #reset {
+  form .enviar #reset {
     background-color: #ddd;
     color: #062c41;
     font-family: "Merriweather", serif;
     border: none;
     border-radius: 15px; }
-  form #reset:hover {
+  form .enviar:hover #reset:hover {
     background-color: #ffef78; }
-  form #reset:active {
-    background-color: #f371de; }
-  form .enviar {
-    background-color: #ddd;
-    color: #062c41;
-    font-family: "Merriweather", serif;
-    border: none;
-    border-radius: 15px; }
-  form .enviar:hover {
-    background-color: #ffef78; }
-  form .enviar:active {
+  form .enviar:active #reset:active {
     background-color: #f371de; }
   form .modal-title {
     color: #0f0f1d; }
@@ -99,179 +75,138 @@ form {
     font-size: 20px; }
     form legend {
       font-size: 25px;
-      padding: 10%;
-      border-radius: 50px; }
+      padding: 5px;
+      border-radius: 5px;
+      width: 80%; }
     form fieldset {
       border-width: 3px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding: 10px;
+      margin: 50px; }
+      form fieldset label {
+        padding: 15px; }
       form fieldset .contacto__grid--fieldsetNombre {
-        margin-bottom: 50px;
+        margin-bottom: 5px;
         grid-area: nombreFieldset; }
-        form fieldset .contacto__grid--fieldsetNombre #nombre {
+        form fieldset .contacto__grid--fieldsetNombre .listaPronombres #nombre #nacimiento #email {
           font: 25px;
-          padding: 4px;
+          padding: 8px;
           margin: 10px;
           width: 300px; }
-        form fieldset .contacto__grid--fieldsetNombre .form-select {
-          font: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 300px; }
-        form fieldset .contacto__grid--fieldsetNombre #nacimiento {
-          font: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 160px;
-          margin-left: 100px; }
-        form fieldset .contacto__grid--fieldsetNombre #email {
-          font-size: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 300px; }
-      form fieldset .contacto__grid--fieldsetContacto {
+      form fieldset--fieldsetContacto {
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset; }
-        form fieldset .contacto__grid--fieldsetContacto #motivoconsulta {
-          padding: 4px;
+        form fieldset--fieldsetContacto #motivoconsulta {
+          padding: 8px;
           border-radius: 3px;
           margin: 10px;
           width: 300px; }
-        form fieldset .contacto__grid--fieldsetContacto textarea {
+        form fieldset--fieldsetContacto textarea {
           border-radius: 5px;
           margin: 10px;
-          width: 400px;
+          width: 800px;
           height: 200px; }
-      form fieldset .contacto__grid--fieldsetBotones {
+      form fieldset--fieldsetBotones {
         grid-area: botonesFieldset; }
-        form fieldset .contacto__grid--fieldsetBotones #reset {
+        form fieldset--fieldsetBotones .enviar #reset {
           font-size: 20px;
           padding: 20px;
           border-radius: 15px;
-          margin: 10px; }
-        form fieldset .contacto__grid--fieldsetBotones .enviar {
-          font-size: 20px;
-          padding: 20px;
-          border-radius: 15px;
-          margin: 10px; } }
+          margin: 10px;
+          width: 100px; } }
 
 .contenido__externo {
-  display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 5% 50% 20%;
-  grid-template-areas: "tituloContenido"
- "contenidototal"
- "contenidoSpotifytotal";
   justify-content: space-around;
   align-items: center;
-  row-gap: 10px;
-  column-gap: 10px;
   padding: 15px;
   text-align: center; }
-  .contenido__externo h3 {
-    background-color: #20485e69;
-    border-radius: 15px; }
-  .contenido__externo .contenido__externo--Titulo {
-    grid-area: tituloContenido; }
-  .contenido__externo .contenido__externo--InstagramPost {
-    grid-area: contenidoInstagramtotal;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-    .contenido__externo .contenido__externo--InstagramPost .instagram-media {
-      width: 260px;
-      margin: 5px; }
-  .contenido__externo .contenido__externo--Spotify {
-    grid-area: contenidoSpotifytotal;
+  .contenido__externo h2 {
+    font-size: 60px; }
+  .contenido__externo--Spotify {
     display: flex;
     flex-direction: column; }
-    .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist {
+    .contenido__externo--Spotify--SpotifyPlaylist {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around; }
-      .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist .contenido__externo--SpotifyPlaylist iframe {
+      justify-content: space-around;
+      margin: 10px; }
+      .contenido__externo--Spotify--SpotifyPlaylist--SpotifyPlaylist iframe {
         width: 260px;
-        justify-content: space-between; }
+        height: 500px;
+        justify-content: space-between;
+        margin: auto; }
 
 @media only screen and (max-width: 400px) {
   .contenido__externo h3 {
     padding: 5px; }
-  .contenido__externo--Spotify iframe {
+  --Spotify iframe {
     margin-bottom: 20px; } }
 
-.grilla__Index {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 34% 48% 8%;
-  grid-template-areas: "seccion1"
- "seccion2"
- "seccion3"
- "seccion4"; }
-  .grilla__Index .astrodata_index {
-    grid-area: seccion1;
-    align-items: baseline; }
-  .grilla__Index .queEsastrologia {
-    grid-area: seccion2;
-    background-clip: padding-box;
+.grilla__Index .astrodata_index {
+  align-items: baseline; }
+
+.grilla__Index .queEsastrologia {
+  background-clip: padding-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .grilla__Index .queEsastrologia h2 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    .grilla__Index .queEsastrologia h2 {
-      text-align: center;
-      letter-spacing: 5px;
-      padding: 10px;
-      margin-top: 60px;
-      color: #f371de;
-      font-size: 45px; }
-    .grilla__Index .queEsastrologia p {
-      text-align: inherit;
-      padding: 30px;
-      width: 80%; }
-  .grilla__Index .secciondos_index {
-    grid-area: seccion3;
-    text-align: center; }
-    .grilla__Index .secciondos_index .card-body {
-      text-align: center;
-      margin: auto;
-      border-radius: 50px;
-      margin: 10px;
-      background-color: rgba(221, 221, 221, 0.658); }
-    .grilla__Index .secciondos_index h5 {
-      text-align: center;
-      letter-spacing: 5px;
-      padding: 5px;
-      margin-top: auto;
-      color: #a5218f;
-      font-size: 25px; }
-  .grilla__Index #parasabermas {
-    grid-area: seccion4;
-    text-decoration: none;
-    color: #e0efde;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-top: 60px;
+    color: #f371de;
+    font-size: 45px; }
+  .grilla__Index .queEsastrologia .parrafoIndex {
+    text-align: center !important;
+    padding: 30px;
+    width: 80%; }
+
+.grilla__Index .secciondos_index {
+  grid-area: seccion3;
+  text-align: center; }
+  .grilla__Index .secciondos_index .card-body {
     text-align: center;
-    align-items: center;
-    justify-content: center; }
-    .grilla__Index #parasabermas #parasabermas:hover {
-      text-decoration: underline;
-      align-items: center; }
+    margin: auto;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: #949494; }
+  .grilla__Index .secciondos_index h5 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-top: auto;
+    color: #a5218f;
+    font-size: 25px; }
+
+.grilla__Index #parasabermas {
+  grid-area: seccion4;
+  text-decoration: none;
+  color: #ddd;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .grilla__Index #parasabermas #parasabermas:hover {
+    text-decoration: underline;
+    align-items: center; }
 
 @media only screen and (max-width: 400px) {
   #imagen_index {
     width: 200px; }
-  .grilla__Index--main {
+  .div_main {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
-    .grilla__Index--main .astrodata_index {
+    .div_main .astrodata_index {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
-      .grilla__Index--main .astrodata_index h2 {
+      .div_main .astrodata_index h2 {
         text-align: center;
         letter-spacing: 5px;
         padding: auto;
@@ -279,17 +214,17 @@ form {
         color: #f371de;
         font-size: 34px;
         font-weight: lighter; }
-      .grilla__Index--main .astrodata_index p {
+      .div_main .astrodata_index p {
         font-size: small;
         width: 80%;
         text-align: center;
         align-items: center; }
-    .grilla__Index--main .queEsastrologia {
+    .div_main .queEsastrologia {
       display: flex;
       flex-direction: column;
       padding-top: 30px;
       align-items: center; }
-    .grilla__Index--main .secciondos_index {
+    .div_main .secciondos_index {
       display: flex;
       flex-direction: column;
       font-size: small;
@@ -297,14 +232,14 @@ form {
       row-gap: 50px;
       align-items: center;
       justify-content: space-around; }
-      .grilla__Index--main .secciondos_index h3 {
+      .div_main .secciondos_index h3 {
         text-align: center;
         letter-spacing: 5px;
         padding: 20px 0px 10px 0px;
         margin-top: auto;
         color: #f371de;
         font-size: 20px; }
-    .grilla__Index--main #parasabermas {
+    .div_main #parasabermas {
       font-size: small;
       padding: 15px;
       margin: 15px; } }
@@ -352,8 +287,7 @@ form {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
- "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     align-items: baseline;
     width: 90%; }
     .astrodata_index h2 {
@@ -396,8 +330,7 @@ form {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
- "Seccion1-3_Index Seccion1-2_Index";
+    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     margin-top: 40px; }
     .astrodata_index h2 {
       grid-area: Seccion1-1_Index;
@@ -407,15 +340,19 @@ form {
       margin-top: 60px;
       color: #f371de;
       font-size: 120px;
-      font-weight: lighter; }
+      font-weight: lighter;
+      align-items: flex-start; }
     .astrodata_index #imagen_index {
-      grid-area: Seccion1-2_Index; }
+      grid-area: Seccion1-2_Index;
+      align-items: flex-start; }
     .astrodata_index p {
       grid-area: Seccion1-3_Index;
       font-size: large;
       width: 80%;
       text-align: center;
-      padding: 10px 20px 10px 30px; }
+      padding: 10px 20px 10px 30px;
+      margin: 10px;
+      align-items: flex-end; }
   .queEsastrologia {
     padding-top: 50px; }
   .secciondos_index .contenedor_cards {
@@ -676,7 +613,7 @@ body {
     height: 0%; }
     body .navbar .container-fluid {
       position: fixed;
-      top: 10px;
+      padding-top: 3rem;
       height: fit-content;
       background-image: url(../img/ep_naturalblack.png); }
       body .navbar .container-fluid #logo {
@@ -698,17 +635,12 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 10px;
-  color: #ffef78; }
-  .redes_footer p {
-    align-items: center; }
-  .redes_footer a {
-    text-decoration: none;
-    color: #ffef78; }
-  .redes_footer a:hover {
-    color: #ddd; }
+  margin: 20px 15px 10px 15px;
+  row-gap: 10px; }
+  .redes_footer .fa {
+    margin: 20px 15px 10px 15px; }
+    .redes_footer .fa .fa:hover {
+      opacity: 0.7; }
 
 @media only screen and (max-width: 400px) {
   h2 {

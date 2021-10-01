@@ -5,26 +5,21 @@
     align-items: center;
     padding: 15px;
     text-align: center;
-    h3{
-        background-color: #20485e69;
-        border-radius: 15px;
+    h2{        
+        font-size: 60px;
     }
-    .contenido__externo--Titulo{
-        margin-top: 100px;
-    }
-    .contenido__externo--Spotify{
+    &--Spotify{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
-        padding-bottom: 100px;
-        .contenido__externo--SpotifyPlaylist{
+        &--SpotifyPlaylist{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 10px;
-            .contenido__externo--SpotifyPlaylist iframe{
+            &--SpotifyPlaylist iframe{
                 width: 260px;
+                 height: 500px;
                 justify-content: space-between;
                 margin: auto;
             }
@@ -41,7 +36,7 @@
       padding: 5px;
     }
   
-    .contenido__externo--Spotify iframe{
+    &--Spotify iframe{
       margin-bottom: 20px;
     }
 }
