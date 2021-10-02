@@ -136,35 +136,61 @@ form {
       label{
         padding: 10px;
       }
-      .contacto__grid--fieldsetNombre {
-        margin-bottom: 5px;
-        grid-area: nombreFieldset;
-        #nombre {
-          font: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 300px;
-        }
-        .listaPronombres{
-          font: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 300px;
-        }
-        #nacimiento {
-          font: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 160px;
-          margin-left: 100px;
-        }
-        #email {
-          font-size: 25px;
-          padding: 4px;
-          margin: 10px;
-          width: 300px;
-        }
+      .contacto__grid{
+        &--fieldsetNombre {
+          margin-bottom: 5px;
+          grid-area: nombreFieldset;
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-columns: 20% 20% 20% 20% 20%;
+          grid-template-areas: "nombreL        nombre"
+                              "pronombreL     pronombre"
+                              "nacimientoL    nacimiento"
+                              "emailL         email"
+                              "suscripcionL   suscripcion";
+          #nombreL{
+            grid-area: nombreL;
+          }
+          #nombre {
+            grid-area: nombre;
+            font: 25px;
+            padding: 4px;
+            margin: 10px;
+            width: 300px;
+          }
+          #pronombreL{
+            grid-area: nombreL;
+          }
+          .listaPronombres{
+            grid-area: pronombre;
+            font: 25px;
+            padding: 4px;
+            margin: 10px;
+            width: 300px;
+          }
+          #nacimientoL{
+            grid-area: nacimientoL;
+          }
+          #nacimiento {
+            grid-area: nacimiento;
+            font: 25px;
+            padding: 4px;
+            margin: 10px;
+            width: 160px;
+            margin-left: 100px;
+          }
+          #emailL{
+            grid-area: emailL;
+          }
+          #email {
+            grid-area: email;
+            font-size: 25px;
+            padding: 4px;
+            margin: 10px;
+            width: 300px;
+          }
       }
+    }  
       .contacto__grid--fieldsetContacto {
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset;

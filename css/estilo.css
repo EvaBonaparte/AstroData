@@ -108,24 +108,40 @@ form {
         padding: 10px; }
       form fieldset .contacto__grid--fieldsetNombre {
         margin-bottom: 5px;
-        grid-area: nombreFieldset; }
+        grid-area: nombreFieldset;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-areas: "nombreL        nombre" "pronombreL     pronombre" "nacimientoL    nacimiento" "emailL         email" "suscripcionL   suscripcion"; }
+        form fieldset .contacto__grid--fieldsetNombre #nombreL {
+          grid-area: nombreL; }
         form fieldset .contacto__grid--fieldsetNombre #nombre {
+          grid-area: nombre;
           font: 25px;
           padding: 4px;
           margin: 10px;
           width: 300px; }
+        form fieldset .contacto__grid--fieldsetNombre #pronombreL {
+          grid-area: nombreL; }
         form fieldset .contacto__grid--fieldsetNombre .listaPronombres {
+          grid-area: pronombre;
           font: 25px;
           padding: 4px;
           margin: 10px;
           width: 300px; }
+        form fieldset .contacto__grid--fieldsetNombre #nacimientoL {
+          grid-area: nacimientoL; }
         form fieldset .contacto__grid--fieldsetNombre #nacimiento {
+          grid-area: nacimiento;
           font: 25px;
           padding: 4px;
           margin: 10px;
           width: 160px;
           margin-left: 100px; }
+        form fieldset .contacto__grid--fieldsetNombre #emailL {
+          grid-area: emailL; }
         form fieldset .contacto__grid--fieldsetNombre #email {
+          grid-area: email;
           font-size: 25px;
           padding: 4px;
           margin: 10px;
