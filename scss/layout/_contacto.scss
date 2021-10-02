@@ -66,17 +66,25 @@ form {
   }
   .contacto__fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
-  }
-  label{    
-    font: "Merriweather" serif;
-    color: $colorParrafo;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   textarea {
-    @include datos-form("Merriweather" serif, $colorAlternativoCuatro, $colorAclaraciones, none, 5px)
+    font: "Merriweather", serif;
+    border: none;
+    border-radius: 5px;
+    background-color: $colorAclaraciones;
+    color: $colorAlternativoCuatro;
   }
   .contacto__fieldsetBotones{
     .enviar #reset {
-      @include datos-form("Merriweather" serif, $colorAlternativoCuatro, $colorAclaraciones, none, 15px)
+      background-color: $colorParrafo;
+      color: $colorAlternativoCinco;
+      font-family: "Merriweather", serif;
+      border: none;
+      border-radius: 15px;
     }
     .enviar:hover #reset:hover {
       background-color: $colorAlternativoDos;
@@ -90,6 +98,7 @@ form {
     .modal-body{
       color: $colorAlternativoCuatro;
     }
+  }
   }
 }
 
