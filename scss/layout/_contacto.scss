@@ -1,5 +1,8 @@
 @import "variables.scss";
 
+h1{
+  @include  titulos(center, none, 100px, none, $colorAlternativoUno, 50px);
+}
 
 form {
     margin: auto;
@@ -17,59 +20,63 @@ form {
   }
   .contacto__fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2% 19% 19% 19% 19% 19%;
+    grid-template-areas: "legendN       legendN"
+                         "nombreL      nombre"
+                         "pronombreL   pronombre"
+                         "nacimientoL  nacimiento"
+                         "emailL       email"
+                         "suscripcionL suscripcion";
     justify-content: space-around;
+    #legendNombre{
+      grid-area: legendN;
+    }
+    #nombreL{
+      grid-area: nombreL;
+    }
     #nombre {
-      font: "Merriweather", serif;
-      color: $colorAlternativoCuatro;
-      background-color: $colorAclaraciones;
-      border: none;
-      border-radius: 3px;
+      grid-area: nombre;
+    }
+    #pronombreL {
+      grid-area: pronombreL;
     }
     .listaPronombres {
-      font: "Merriweather", serif;
-      color: $colorAlternativoCuatro;
-      background-color: $colorAclaraciones;
-      border: none;
-      border-radius: 3px;
+      grid-area: pronombre;
+    }
+    #nacimientoL{
+      grid-area: nacimientoL;
     }
     #nacimiento{
-
+      grid-area: nacimiento;
+    }
+    #emailL{
+      grid-area: emailL;
     }
     #email{
-      
+      grid-area: email;
     }
-    #motivoconsulta{
-      font: "Merriweather", serif;
-      color: $colorAlternativoCuatro;
-      background-color: $colorAclaraciones;
-      border: none;
-      border-radius: 3px;
+    #suscripcionL{
+      grid-area: suscripcionL;
+    }
+    .form-check{
+      grid-area: suscripcion;
     }
   }
   .contacto__fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  }
+  label{    
+    font: "Merriweather" serif;
+    color: $colorParrafo;
   }
   textarea {
-    font: "Merriweather", serif;
-    border: none;
-    border-radius: 5px;
-    background-color: $colorAclaraciones;
-    color: $colorAlternativoCuatro;
+    @include datos-form("Merriweather" serif, $colorAlternativoCuatro, $colorAclaraciones, none, 5px)
   }
   .contacto__fieldsetBotones{
     .enviar #reset {
-      background-color: $colorParrafo;
-      color: $colorAlternativoCinco;
-      font-family: "Merriweather", serif;
-      border: none;
-      border-radius: 15px;
+      @include datos-form("Merriweather" serif, $colorAlternativoCuatro, $colorAclaraciones, none, 15px)
     }
     .enviar:hover #reset:hover {
       background-color: $colorAlternativoDos;

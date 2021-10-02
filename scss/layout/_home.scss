@@ -3,7 +3,7 @@
 
 .grilla__Index {
     .astrodata_index{
-        align-items: baseline;
+        height: fit-content;
     }
     .queEsastrologia {
         background-clip: padding-box;
@@ -15,9 +15,9 @@
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
         }
         .parrafoIndex {
-            text-align: center !important; 
-            padding: 30px;
+            padding: 60px;
             width: 80%;
+            text-align: center;
         }
     }
     .secciondos_index {
@@ -198,17 +198,20 @@
         grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
                             "Seccion1-3_Index Seccion1-2_Index";
         margin-top: 40px;
-        h2{
+        .animate__fadeInLeft{
             grid-area: Seccion1-1_Index;
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 120px);
             font-weight: lighter;            
             align-items: flex-start;
+            position: relative;
+            bottom: 500px;
         }
-        #imagen_index{
+        .animate__fadeInRight{
             grid-area:  Seccion1-2_Index;
-            align-items: flex-start;
+            position: relative;
+            bottom: 150px;
         }
-        p{
+        .animate__fadeInUp{
             grid-area: Seccion1-3_Index;
             font-size: large;
             width: 80%;
@@ -216,10 +219,15 @@
             padding: 10px 20px 10px 30px;
             margin: 10px;
             align-items: flex-end;
+            position: relative;
+            bottom: 390px;
+            left: 50px;
         }
     }
     .queEsastrologia{
-        padding-top: 50px;
+        padding-top: 10px;
+        text-align: center;
+        width: 80%;
     }
     .secciondos_index{
         .contenedor_cards{

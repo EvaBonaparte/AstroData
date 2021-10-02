@@ -48,12 +48,12 @@
 
  <main>
         <section class="tituloSeccion">
-            <h2>Contacto</h2>
+            <h1>Contacto</h1>
 <!--COMIENZO FORMULARIO-->
             <form action="" method="POST" autocomplete="on" class="contacto">
 <!--FORM DATOS PERSONALES-->
                 <fieldset class="contacto contacto__fieldsetNombre">
-                    <legend> Por favor, completa los siguientes datos: </legend>
+                    <legend id="legendNombre"> Por favor, completa los siguientes datos: </legend>
                         <label for="nombre" id="nombreL">¿Cuál es tu nombre?</label>
                         <input type="text" name="nombre" id="nombre" placeholder="Amanda Gonzalez" required>
                         <label for="prenombre" id="prenombreL">¿Qué pronombre preferís que use para referirme a vos?</label>
@@ -75,13 +75,13 @@
 <!--FORM MOTIVO DEL CONTACTO-->
                 <fieldset class="contacto contacto__fieldsetContacto">
                     <legend> Completá los siguientes datos sobre tu consulta o comentario: </legend>
-                        <label for="motivoconsulta">¿Cuál es el motivo de tu consulta?</label>
+                        <label for="motivoconsulta" id="motivoconsultaL">¿Cuál es el motivo de tu consulta?</label>
                         <select name="motivoconsulta" id="motivoconsulta" required>
                             <option value="talleres">Clases</option>
                             <option value="constultoria">Consultoria astrológica</option>
                             <option value="dudas">Dudas y sugerencias</option>
                         </select>
-                        <label for="comentario">A continuación podés escribir tu consulta o comentario:</label>
+                        <label for="comentario" id="comentarioL">A continuación podés escribir tu consulta o comentario:</label>
                         <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribí acá tu comentario o consulta..." required></textarea>
                 </fieldset>
 <!--ENVIAR/RESETEO FORM-->

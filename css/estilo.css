@@ -1,3 +1,11 @@
+h1 {
+  text-align: center;
+  letter-spacing: none;
+  padding: 100px;
+  margin-top: none;
+  color: #f371de;
+  font-size: 50px; }
+
 form {
   margin: auto; }
   form legend {
@@ -12,44 +20,48 @@ form {
     height: fit-content; }
   form .contacto__fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2% 19% 19% 19% 19% 19%;
+    grid-template-areas: "legendN       legendN" "nombreL      nombre" "pronombreL   pronombre" "nacimientoL  nacimiento" "emailL       email" "suscripcionL suscripcion";
     justify-content: space-around; }
+    form .contacto__fieldsetNombre #legendNombre {
+      grid-area: legendN; }
+    form .contacto__fieldsetNombre #nombreL {
+      grid-area: nombreL; }
     form .contacto__fieldsetNombre #nombre {
-      font: "Merriweather", serif;
-      color: #0f0f1d;
-      background-color: #949494;
-      border: none;
-      border-radius: 3px; }
+      grid-area: nombre; }
+    form .contacto__fieldsetNombre #pronombreL {
+      grid-area: pronombreL; }
     form .contacto__fieldsetNombre .listaPronombres {
-      font: "Merriweather", serif;
-      color: #0f0f1d;
-      background-color: #949494;
-      border: none;
-      border-radius: 3px; }
-    form .contacto__fieldsetNombre #motivoconsulta {
-      font: "Merriweather", serif;
-      color: #0f0f1d;
-      background-color: #949494;
-      border: none;
-      border-radius: 3px; }
+      grid-area: pronombre; }
+    form .contacto__fieldsetNombre #nacimientoL {
+      grid-area: nacimientoL; }
+    form .contacto__fieldsetNombre #nacimiento {
+      grid-area: nacimiento; }
+    form .contacto__fieldsetNombre #emailL {
+      grid-area: emailL; }
+    form .contacto__fieldsetNombre #email {
+      grid-area: email; }
+    form .contacto__fieldsetNombre #suscripcionL {
+      grid-area: suscripcionL; }
+    form .contacto__fieldsetNombre .form-check {
+      grid-area: suscripcion; }
   form .contacto__fieldsetContacto {
-    background-image: url(../img/img_formNombre.png);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+    background-image: url(../img/img_formNombre.png); }
+  form label {
+    font: "Merriweather" serif;
+    color: #ddd; }
   form textarea {
-    font: "Merriweather", serif;
-    border: none;
-    border-radius: 5px;
+    font: "Merriweather" serif;
+    color: #0f0f1d;
     background-color: #949494;
-    color: #0f0f1d; }
+    border: none;
+    border-radius: 5px; }
   form .contacto__fieldsetBotones .enviar #reset {
-    background-color: #ddd;
-    color: #062c41;
-    font-family: "Merriweather", serif;
+    font: "Merriweather" serif;
+    color: #0f0f1d;
+    background-color: #949494;
     border: none;
     border-radius: 15px; }
   form .contacto__fieldsetBotones .enviar:hover #reset:hover {
@@ -169,7 +181,7 @@ form {
     margin-bottom: 20px; } }
 
 .grilla__Index .astrodata_index {
-  align-items: baseline; }
+  height: fit-content; }
 
 .grilla__Index .queEsastrologia {
   background-clip: padding-box;
@@ -185,9 +197,9 @@ form {
     color: #f371de;
     font-size: 45px; }
   .grilla__Index .queEsastrologia .parrafoIndex {
-    text-align: center !important;
-    padding: 30px;
-    width: 80%; }
+    padding: 60px;
+    width: 80%;
+    text-align: center; }
 
 .grilla__Index .secciondos_index {
   grid-area: seccion3;
@@ -357,7 +369,7 @@ form {
     grid-template-rows: 70% 30%;
     grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     margin-top: 40px; }
-    .astrodata_index h2 {
+    .astrodata_index .animate__fadeInLeft {
       grid-area: Seccion1-1_Index;
       text-align: center;
       letter-spacing: 5px;
@@ -366,20 +378,28 @@ form {
       color: #f371de;
       font-size: 120px;
       font-weight: lighter;
-      align-items: flex-start; }
-    .astrodata_index #imagen_index {
+      align-items: flex-start;
+      position: relative;
+      bottom: 500px; }
+    .astrodata_index .animate__fadeInRight {
       grid-area: Seccion1-2_Index;
-      align-items: flex-start; }
-    .astrodata_index p {
+      position: relative;
+      bottom: 150px; }
+    .astrodata_index .animate__fadeInUp {
       grid-area: Seccion1-3_Index;
       font-size: large;
       width: 80%;
       text-align: center;
       padding: 10px 20px 10px 30px;
       margin: 10px;
-      align-items: flex-end; }
+      align-items: flex-end;
+      position: relative;
+      bottom: 390px;
+      left: 50px; }
   .queEsastrologia {
-    padding-top: 50px; }
+    padding-top: 10px;
+    text-align: center;
+    width: 80%; }
   .secciondos_index .contenedor_cards {
     display: flex;
     justify-content: space-evenly; }
@@ -475,43 +495,47 @@ form {
   font-size: 15px;
   font-style: italic; }
 
-.seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
-  color: #ffef78;
-  text-align: center;
-  font-size: 50px; }
+.serviciosIntro #aclaracionCovid {
+  text-align: center; }
 
-.seccion_Servicios table tr th {
-  color: #ddd;
-  font-size: 20px;
-  margin: auto;
-  text-align: center;
-  border-collapse: collapse;
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd; }
-
-.seccion_Servicios table tr td a {
-  color: #f371de;
-  text-decoration: none; }
-
-.seccion_Servicios table tr td a:hover {
-  text-decoration: underline; }
-
-.seccion_Servicios table tr td .collapsible {
-  color: #a5218f;
-  cursor: pointer;
-  padding: 18px;
-  width: 70px;
-  border: #ffef78;
-  text-align: left;
-  outline: none;
-  font-size: 15px; }
-  .seccion_Servicios table tr td .collapsible .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    width: auto; }
-  .seccion_Servicios table tr td .collapsible .collapsible:hover {
-    background-color: #062c41; }
+.seccion_Servicios {
+  align-items: center;
+  text-align: center; }
+  .seccion_Servicios #talleresLink, .seccion_Servicios #consultoriaLink {
+    color: #ffef78;
+    text-align: center;
+    font-size: 50px; }
+  .seccion_Servicios table {
+    align-items: center; }
+    .seccion_Servicios table tr th {
+      color: #ddd;
+      font-size: 20px;
+      margin: auto;
+      text-align: center;
+      border-collapse: collapse;
+      border-bottom: 1px solid #ddd;
+      border-top: 1px solid #ddd; }
+    .seccion_Servicios table tr td a {
+      color: #f371de;
+      text-decoration: none; }
+    .seccion_Servicios table tr td a:hover {
+      text-decoration: underline; }
+    .seccion_Servicios table tr td .collapsible {
+      color: #a5218f;
+      cursor: pointer;
+      padding: 18px;
+      width: 70px;
+      border: #ffef78;
+      text-align: left;
+      outline: none;
+      font-size: 15px; }
+      .seccion_Servicios table tr td .collapsible .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        width: auto; }
+      .seccion_Servicios table tr td .collapsible .collapsible:hover {
+        background-color: #062c41; }
 
 #aclaracionesServicios {
   margin: auto;
