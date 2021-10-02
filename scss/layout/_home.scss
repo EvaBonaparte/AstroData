@@ -2,19 +2,10 @@
 
 
 .grilla__Index {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 34% 48% 8%;
-    grid-template-areas: "seccion1"
-                         "seccion2"
-                         "seccion3"
-                         "seccion4";
     .astrodata_index{
-        grid-area: seccion1;
         align-items: baseline;
     }
     .queEsastrologia {
-        grid-area: seccion2;
         background-clip: padding-box;
         text-align: center;
         display: flex;
@@ -23,8 +14,8 @@
         h2{
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
         }
-        p {
-            text-align: inherit;
+        .parrafoIndex {
+            text-align: center !important; 
             padding: 30px;
             width: 80%;
         }
@@ -37,7 +28,7 @@
             margin: auto;
             border-radius: 50px;
             margin: 10px;
-            background-color: rgba(221, 221, 221, 0.658);
+            background-color: $colorAclaraciones;
         }
         h5{
             @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
@@ -46,7 +37,7 @@
     #parasabermas{
         grid-area: seccion4;
         text-decoration: none;
-        color: #e0efde;
+        color: $colorParrafo;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -62,7 +53,7 @@
     #imagen_index{
         width: 200px;
       }
-    .grilla__Index--main {
+    .div_main {
         padding-top: 50px;
         display: flex;
         flex-direction: column;
@@ -210,10 +201,12 @@
         h2{
             grid-area: Seccion1-1_Index;
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 120px);
-            font-weight: lighter;
+            font-weight: lighter;            
+            align-items: flex-start;
         }
         #imagen_index{
             grid-area:  Seccion1-2_Index;
+            align-items: flex-start;
         }
         p{
             grid-area: Seccion1-3_Index;
@@ -221,6 +214,8 @@
             width: 80%;
             text-align: center;
             padding: 10px 20px 10px 30px;
+            margin: 10px;
+            align-items: flex-end;
         }
     }
     .queEsastrologia{

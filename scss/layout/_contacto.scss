@@ -8,8 +8,8 @@ form {
   }
   .contacto__grid{
       display: grid;
-      grid-template-columns: 45% 45%;
-      grid-template-rows: 45% 45% 10%;
+      grid-template-columns: 85% 85%;
+      grid-template-rows: 85% 85% 10%;
       grid-template-areas: "nombreFieldset nombreFieldset"
                            "contactoFieldset contactoFieldset"
                            "botonesFieldset botonesFieldset";
@@ -21,7 +21,7 @@ form {
   fieldset {
     border-color: $colorAclaraciones;
   }
-  .contacto__grid--fieldsetNombre {
+  &--fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
     grid-area: nombreFieldset;
     display: flex;
@@ -29,7 +29,7 @@ form {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .contacto__grid--fieldsetContacto {
+  &--fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
     grid-area: contactoFieldset;
     display: flex;
@@ -39,33 +39,19 @@ form {
   }
   #nombre {
     font: "Merriweather", serif;
-    color: #0f0f1d;
+    color: $colorAlternativoCuatro;
     background-color: $colorAclaraciones;
     border: none;
     border-radius: 3px;
   }
   .listaPronombres {
     font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: $colorAclaraciones;
-    border: none;
-    border-radius: 3px;
-  }
-  #nacimiento {
-    font: "Merriweather", serif;
     color: $colorAlternativoCuatro;
     background-color: $colorAclaraciones;
     border: none;
     border-radius: 3px;
   }
-  #email {
-    font: "Merriweather", serif;
-    color: $colorAlternativoCuatro;
-    background-color: $colorAclaraciones;
-    border: none;
-    border-radius: 3px;
-  }
-  #motivoconsulta {
+  #nacimiento #email #motivoconsulta{
     font: "Merriweather", serif;
     color: $colorAlternativoCuatro;
     background-color: $colorAclaraciones;
@@ -82,30 +68,17 @@ form {
   .contacto__grid--fieldsetBotones{
       grid-area: botonesFieldset;
   }
-  #reset {
+  .enviar #reset {
     background-color: $colorParrafo;
     color: $colorAlternativoCinco;
     font-family: "Merriweather", serif;
     border: none;
     border-radius: 15px;
   }
-  #reset:hover {
+  .enviar:hover #reset:hover {
     background-color: $colorAlternativoDos;
   }
-  #reset:active {
-    background-color: $colorAlternativoUno;
-  }
-  .enviar {
-    background-color: $colorParrafo;
-    color: $colorAlternativoCinco;
-    font-family: "Merriweather", serif;
-    border: none;
-    border-radius: 15px;
-  }
-  .enviar:hover {
-    background-color: $colorAlternativoDos;
-  }
-  .enviar:active {
+  .enviar:active #reset:active {
     background-color: $colorAlternativoUno;
   }
   .modal-title{
@@ -125,21 +98,23 @@ form {
     font-size: 20px;
     legend {
       font-size: 25px;
-      padding: 10px;
+      padding: 5px;
       border-radius: 5px;
+      width: 80%;
     }  
     fieldset {
       border-width: 3px;
       border-radius: 5px;
       padding: 10px;
-      margin: 20px;
+      margin: 50px;
       label{
-        padding: 10px;
+        padding: 15px;
       }
       .contacto__grid{
         &--fieldsetNombre {
           margin-bottom: 5px;
           grid-area: nombreFieldset;
+<<<<<<< HEAD
           display: grid;
           grid-template-columns: 50% 50%;
           grid-template-columns: 20% 20% 20% 20% 20%;
@@ -192,10 +167,21 @@ form {
       }
     }  
       .contacto__grid--fieldsetContacto {
+=======
+          .listaPronombres #nombre #nacimiento #email {
+            font: 25px;
+            padding: 8px;
+            margin: 10px;
+            width: 300px;
+          }
+        }
+      }
+      &--fieldsetContacto {
+>>>>>>> Scss
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset;
         #motivoconsulta {
-          padding: 4px;
+          padding: 8px;
           border-radius: 3px;
           margin: 10px;
           width: 300px;
@@ -203,23 +189,18 @@ form {
         textarea {
           border-radius: 5px;
           margin: 10px;
-          width: 400px;
+          width: 800px;
           height: 200px;
         }
       }
-      .contacto__grid--fieldsetBotones{
+      &--fieldsetBotones{
         grid-area: botonesFieldset;
-        #reset {
+        .enviar  #reset {
           font-size: 20px;
           padding: 20px;
           border-radius: 15px;
           margin: 10px;
-        }
-        .enviar {
-          font-size: 20px;
-          padding: 20px;
-          border-radius: 15px;
-          margin: 10px;
+          width: 100px;
         }
       }
     }
