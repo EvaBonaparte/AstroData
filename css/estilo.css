@@ -2,75 +2,63 @@ form {
   margin: auto; }
   form legend {
     background-color: #a5218f; }
-  form .contacto__grid {
-    display: grid;
-<<<<<<< HEAD
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 45% 45% 10%;
-=======
-    grid-template-columns: 85% 85%;
-    grid-template-rows: 85% 85% 10%;
->>>>>>> Scss
-    grid-template-areas: "nombreFieldset nombreFieldset" "contactoFieldset contactoFieldset" "botonesFieldset botonesFieldset";
+  form .contacto {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    color: #ddd; }
-  form fieldset {
-    border-color: #949494; }
-  form--fieldsetNombre {
+    color: #ddd;
+    height: fit-content; }
+  form .contacto__fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
-    grid-area: nombreFieldset;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  form--fieldsetContacto {
+    form .contacto__fieldsetNombre #nombre {
+      font: "Merriweather", serif;
+      color: #0f0f1d;
+      background-color: #949494;
+      border: none;
+      border-radius: 3px; }
+    form .contacto__fieldsetNombre .listaPronombres {
+      font: "Merriweather", serif;
+      color: #0f0f1d;
+      background-color: #949494;
+      border: none;
+      border-radius: 3px; }
+    form .contacto__fieldsetNombre #motivoconsulta {
+      font: "Merriweather", serif;
+      color: #0f0f1d;
+      background-color: #949494;
+      border: none;
+      border-radius: 3px; }
+  form .contacto__fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
-    grid-area: contactoFieldset;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-  form #nombre {
-    font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: #949494;
-    border: none;
-    border-radius: 3px; }
-  form .listaPronombres {
-    font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: #949494;
-    border: none;
-    border-radius: 3px; }
-  form #nacimiento #email #motivoconsulta {
-    font: "Merriweather", serif;
-    color: #0f0f1d;
-    background-color: #949494;
-    border: none;
-    border-radius: 3px; }
   form textarea {
     font: "Merriweather", serif;
     border: none;
     border-radius: 5px;
     background-color: #949494;
     color: #0f0f1d; }
-  form .contacto__grid--fieldsetBotones {
-    grid-area: botonesFieldset; }
-  form .enviar #reset {
+  form .contacto__fieldsetBotones .enviar #reset {
     background-color: #ddd;
     color: #062c41;
     font-family: "Merriweather", serif;
     border: none;
     border-radius: 15px; }
-  form .enviar:hover #reset:hover {
+  form .contacto__fieldsetBotones .enviar:hover #reset:hover {
     background-color: #ffef78; }
-  form .enviar:active #reset:active {
+  form .contacto__fieldsetBotones .enviar:active #reset:active {
     background-color: #f371de; }
-  form .modal-title {
+  form .contacto__fieldsetBotones .modal-title {
     color: #0f0f1d; }
-  form .modal-body {
+  form .contacto__fieldsetBotones .modal-body {
     color: #0f0f1d; }
 
 @media only screen and (min-width: 1000px) {
@@ -80,22 +68,16 @@ form {
     font-size: 20px; }
     form legend {
       font-size: 25px;
-<<<<<<< HEAD
-      padding: 10px;
-      border-radius: 5px; }
-=======
       padding: 5px;
       border-radius: 5px;
       width: 80%; }
->>>>>>> Scss
     form fieldset {
       border-width: 3px;
       border-radius: 5px;
       padding: 10px;
-<<<<<<< HEAD
-      margin: 20px; }
+      margin: 50px; }
       form fieldset label {
-        padding: 10px; }
+        padding: 15px; }
       form fieldset .contacto__grid--fieldsetNombre {
         margin-bottom: 5px;
         grid-area: nombreFieldset;
@@ -115,20 +97,10 @@ form {
           grid-area: nombreL; }
         form fieldset .contacto__grid--fieldsetNombre .listaPronombres {
           grid-area: pronombre;
-=======
-      margin: 50px; }
-      form fieldset label {
-        padding: 15px; }
-      form fieldset .contacto__grid--fieldsetNombre {
-        margin-bottom: 5px;
-        grid-area: nombreFieldset; }
-        form fieldset .contacto__grid--fieldsetNombre .listaPronombres #nombre #nacimiento #email {
->>>>>>> Scss
           font: 25px;
-          padding: 8px;
+          padding: 4px;
           margin: 10px;
           width: 300px; }
-<<<<<<< HEAD
         form fieldset .contacto__grid--fieldsetNombre #nacimientoL {
           grid-area: nacimientoL; }
         form fieldset .contacto__grid--fieldsetNombre #nacimiento {
@@ -147,17 +119,14 @@ form {
           margin: 10px;
           width: 300px; }
       form fieldset .contacto__grid--fieldsetContacto {
-=======
-      form fieldset--fieldsetContacto {
->>>>>>> Scss
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset; }
-        form fieldset--fieldsetContacto #motivoconsulta {
+        form fieldset .contacto__grid--fieldsetContacto #motivoconsulta {
           padding: 8px;
           border-radius: 3px;
           margin: 10px;
           width: 300px; }
-        form fieldset--fieldsetContacto textarea {
+        form fieldset .contacto__grid--fieldsetContacto textarea {
           border-radius: 5px;
           margin: 10px;
           width: 800px;
@@ -176,39 +145,20 @@ form {
   align-items: center;
   padding: 15px;
   text-align: center; }
-<<<<<<< HEAD
-  .contenido__externo h3 {
-    background-color: #20485e69;
-    border-radius: 15px; }
-  .contenido__externo .contenido__externo--Titulo {
-    margin-top: 100px; }
-  .contenido__externo .contenido__externo--Spotify {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding-bottom: 100px; }
-    .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist {
-=======
   .contenido__externo h2 {
     font-size: 60px; }
   .contenido__externo--Spotify {
     display: flex;
     flex-direction: column; }
     .contenido__externo--Spotify--SpotifyPlaylist {
->>>>>>> Scss
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
       margin: 10px; }
-<<<<<<< HEAD
-      .contenido__externo .contenido__externo--Spotify .contenido__externo--SpotifyPlaylist .contenido__externo--SpotifyPlaylist iframe {
-        width: 260px;
-=======
       .contenido__externo--Spotify--SpotifyPlaylist--SpotifyPlaylist iframe {
         width: 260px;
         height: 500px;
->>>>>>> Scss
         justify-content: space-between;
         margin: auto; }
 
@@ -218,19 +168,6 @@ form {
   --Spotify iframe {
     margin-bottom: 20px; } }
 
-<<<<<<< HEAD
-.grilla__Index {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% 34% 48% 8%;
-  grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4"; }
-  .grilla__Index .astrodata_index {
-    grid-area: seccion1;
-    align-items: baseline; }
-  .grilla__Index .queEsastrologia {
-    grid-area: seccion2;
-    background-clip: padding-box;
-=======
 .grilla__Index .astrodata_index {
   align-items: baseline; }
 
@@ -241,7 +178,6 @@ form {
   flex-direction: column;
   justify-content: space-around; }
   .grilla__Index .queEsastrologia h2 {
->>>>>>> Scss
     text-align: center;
     letter-spacing: 5px;
     padding: 10px;

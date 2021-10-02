@@ -6,57 +6,55 @@ form {
   legend {
     background-color: $colorAlternativoTres;
   }
-  .contacto__grid{
-      display: grid;
-      grid-template-columns: 85% 85%;
-      grid-template-rows: 85% 85% 10%;
-      grid-template-areas: "nombreFieldset nombreFieldset"
-                           "contactoFieldset contactoFieldset"
-                           "botonesFieldset botonesFieldset";
+  .contacto{
+      display: flex;
+      flex-direction: column;
       justify-content:center;
       text-align: center;
       align-items: center;
       color: $colorParrafo;
+      height: fit-content;
   }
-  fieldset {
-    border-color: $colorAclaraciones;
-  }
-  &--fieldsetNombre {
+  .contacto__fieldsetNombre {
     background-image: url(../img/img_formNombre.png);
-    grid-area: nombreFieldset;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    #nombre {
+      font: "Merriweather", serif;
+      color: $colorAlternativoCuatro;
+      background-color: $colorAclaraciones;
+      border: none;
+      border-radius: 3px;
+    }
+    .listaPronombres {
+      font: "Merriweather", serif;
+      color: $colorAlternativoCuatro;
+      background-color: $colorAclaraciones;
+      border: none;
+      border-radius: 3px;
+    }
+    #nacimiento{
+
+    }
+    #email{
+      
+    }
+    #motivoconsulta{
+      font: "Merriweather", serif;
+      color: $colorAlternativoCuatro;
+      background-color: $colorAclaraciones;
+      border: none;
+      border-radius: 3px;
+    }
   }
-  &--fieldsetContacto {
+  .contacto__fieldsetContacto {
     background-image: url(../img/img_formNombre.png);
-    grid-area: contactoFieldset;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  #nombre {
-    font: "Merriweather", serif;
-    color: $colorAlternativoCuatro;
-    background-color: $colorAclaraciones;
-    border: none;
-    border-radius: 3px;
-  }
-  .listaPronombres {
-    font: "Merriweather", serif;
-    color: $colorAlternativoCuatro;
-    background-color: $colorAclaraciones;
-    border: none;
-    border-radius: 3px;
-  }
-  #nacimiento #email #motivoconsulta{
-    font: "Merriweather", serif;
-    color: $colorAlternativoCuatro;
-    background-color: $colorAclaraciones;
-    border: none;
-    border-radius: 3px;
   }
   textarea {
     font: "Merriweather", serif;
@@ -65,27 +63,26 @@ form {
     background-color: $colorAclaraciones;
     color: $colorAlternativoCuatro;
   }
-  .contacto__grid--fieldsetBotones{
-      grid-area: botonesFieldset;
-  }
-  .enviar #reset {
-    background-color: $colorParrafo;
-    color: $colorAlternativoCinco;
-    font-family: "Merriweather", serif;
-    border: none;
-    border-radius: 15px;
-  }
-  .enviar:hover #reset:hover {
-    background-color: $colorAlternativoDos;
-  }
-  .enviar:active #reset:active {
-    background-color: $colorAlternativoUno;
-  }
-  .modal-title{
-    color: $colorAlternativoCuatro;
-  }
-  .modal-body{
-    color: $colorAlternativoCuatro;
+  .contacto__fieldsetBotones{
+    .enviar #reset {
+      background-color: $colorParrafo;
+      color: $colorAlternativoCinco;
+      font-family: "Merriweather", serif;
+      border: none;
+      border-radius: 15px;
+    }
+    .enviar:hover #reset:hover {
+      background-color: $colorAlternativoDos;
+    }
+    .enviar:active #reset:active {
+      background-color: $colorAlternativoUno;
+    }
+    .modal-title{
+      color: $colorAlternativoCuatro;
+    }
+    .modal-body{
+      color: $colorAlternativoCuatro;
+    }
   }
 }
 
@@ -114,7 +111,6 @@ form {
         &--fieldsetNombre {
           margin-bottom: 5px;
           grid-area: nombreFieldset;
-<<<<<<< HEAD
           display: grid;
           grid-template-columns: 50% 50%;
           grid-template-columns: 20% 20% 20% 20% 20%;
@@ -167,17 +163,6 @@ form {
       }
     }  
       .contacto__grid--fieldsetContacto {
-=======
-          .listaPronombres #nombre #nacimiento #email {
-            font: 25px;
-            padding: 8px;
-            margin: 10px;
-            width: 300px;
-          }
-        }
-      }
-      &--fieldsetContacto {
->>>>>>> Scss
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset;
         #motivoconsulta {

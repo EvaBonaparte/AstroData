@@ -23,7 +23,13 @@
     font-size: $font-size;
 }
 
-
+@mixin datos-form( $font, $color, $background-color, $border, $border-radius){
+    font: $font;
+    color: $color;
+    background-color: $background-color;
+    border: $border;
+    border-radius: $border-radius;
+}
 
 
 $colorParrafo: #ddd;
