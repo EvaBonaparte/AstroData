@@ -14,24 +14,38 @@
         h2{
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
         }
-        .parrafoIndex {
+        p{
             padding: 60px;
             width: 80%;
-            text-align: center;
         }
     }
     .secciondos_index {
         grid-area: seccion3;
         text-align: center;
-        .card-body{
-            text-align: center;
-            margin: auto;
-            border-radius: 50px;
-            margin: 10px;
-            background-color: $colorAclaraciones;
-        }
-        h5{
-            @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
+        .contenedor_cards{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            .contenedor_cards{
+
+                .card-body{
+                    text-align: center;
+                    align-items: center;
+                    margin: auto;
+                    border-radius: 50px;
+                    margin: 10px;
+                    background-color: $colorAclaraciones;
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    h5{
+                        @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
+                    }
+                }
+            }
         }        
     }
     #parasabermas{
@@ -80,6 +94,9 @@
             flex-direction: column;
             padding-top: 30px;
             align-items: center;
+            p{
+                margin: 20px;
+            }
         }
         .secciondos_index{
             display: flex;
@@ -120,6 +137,9 @@
             flex-direction: column;
             padding-top: 30px;
             align-items: center;
+            p{
+                margin: 20px;
+            }
         }
         .secciondos_index{
             display: flex;

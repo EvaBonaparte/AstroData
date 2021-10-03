@@ -2,8 +2,8 @@
 
 
 .serviciosIntro{
-    h2{
-        @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
+    h1{
+        @include titulos(center, 5px, 10px, 100px, $colorAlternativoUno, 45px);
     }
     li{
         @include texto-parrafo(center, none, 5px, auto, $colorParrafo, 20px);
@@ -14,7 +14,9 @@
         font-style: italic;
     }
     #aclaracionCovid{
-    text-align: center;
+        color: $colorAclaraciones;
+        font-size: 10px;
+        font-style: italic;
     }
 }
 

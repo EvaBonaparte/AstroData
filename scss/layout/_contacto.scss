@@ -79,17 +79,32 @@ form {
     color: $colorAlternativoCuatro;
   }
   .contacto__fieldsetBotones{
-    .enviar #reset {
+    #enviar{
       background-color: $colorParrafo;
       color: $colorAlternativoCinco;
       font-family: "Merriweather", serif;
       border: none;
       border-radius: 15px;
+      padding: 5px;
     }
-    .enviar:hover #reset:hover {
+    #reset {
+      background-color: $colorParrafo;
+      color: $colorAlternativoCinco;
+      font-family: "Merriweather", serif;
+      border: none;
+      border-radius: 15px;
+      padding: 5px;
+    }
+    #enviar:hover{
       background-color: $colorAlternativoDos;
     }
-    .enviar:active #reset:active {
+    #reset:hover{
+      background-color: $colorAlternativoDos;
+    }
+    #enviar:active{
+      background-color: $colorAlternativoUno;
+    }
+    #reset:active {
       background-color: $colorAlternativoUno;
     }
     .modal-title{
@@ -99,11 +114,34 @@ form {
       color: $colorAlternativoCuatro;
     }
   }
+}
+
+@media only screen and (max-width: 800px){
+  form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90%;
+    .contacto__fieldsetNombre {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .contacto__fieldsetContacto{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    
   }
 }
 
-
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 801px){
 
   form {
     max-width: 80%;
@@ -176,8 +214,15 @@ form {
             margin: 10px;
             width: 300px;
           }
-      }
-    }  
+          .form-check{
+            align-items: baseline;
+            #flexSwitchCheckChecked{
+              position: relative;
+              left: 100px;
+            }
+          }  
+        }
+      }  
       .contacto__grid--fieldsetContacto {
         background-image: url(../img/img_formNombre.png);
         grid-area: contactoFieldset;
@@ -196,7 +241,14 @@ form {
       }
       &--fieldsetBotones{
         grid-area: botonesFieldset;
-        .enviar  #reset {
+        .enviar{
+          font-size: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          margin: 10px;
+          width: 100px;
+        }
+        #reset {
           font-size: 20px;
           padding: 20px;
           border-radius: 15px;
