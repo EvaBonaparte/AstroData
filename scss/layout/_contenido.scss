@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.contenido__externo{
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    h2{        
+        font-size: 60px;
+    }
+    &--Spotify{
+        display: flex;
+        flex-direction: column;
+        &--SpotifyPlaylist{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 10px;
+            &--SpotifyPlaylist iframe{
+                width: 260px;
+                 height: 500px;
+                justify-content: space-between;
+                margin: auto;
+            }
+        }    
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 400px){
+    .contenido__externo h3{
+      padding: 5px;
+    }
+  
+    &--Spotify iframe{
+      margin-bottom: 20px;
+    }
+}
