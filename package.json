@@ -2,7 +2,7 @@
   "name": "astrodata_bonaparteeva",
   "version": "1.0.0",
   "description": "AstroData",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/mainScss.scss css/estilo.css",
@@ -14,8 +14,11 @@
     "url": "git+https://github.com/EvaBonaparte/AstroData.git"
   },
   "keywords": [
-    "Astro",
-    "Data"
+    "Astro Data",
+    "carta natal",
+    "astrología",
+    "consulta astrológica",
+    "clases de astrología"
   ],
   "author": "Eva Bonaparte",
   "license": "ISC",
