@@ -3,15 +3,15 @@
 
 .serviciosIntro{
     h1{
-        @include titulos(center, 5px, 10px, 100px, $colorAlternativoUno, 45px);
+        @include titulos(center, 5px, 10px, 100px, $colorAlternativoUno, 60px);
     }
-    li{
-        @include texto-parrafo(center, none, 5px, auto, $colorParrafo, 20px);
-    }
-    p{
-        color: $colorAclaraciones;
-        font-size: 15px;
-        font-style: italic;
+    ul{
+        li{
+            @include texto-parrafo(center, none, 5px, auto, $colorParrafo, 20px);
+            color: $colorAclaraciones;
+            font-size: 15px;
+            font-style: italic;
+        }
     }
     #aclaracionCovid{
         color: $colorAclaraciones;
@@ -47,36 +47,30 @@
         }
         tr{
             td{
-                a{
-                    color: $colorAlternativoUno;
-                    text-decoration: none;
+                color: $colorParrafo;
+                font-size: 12px;
+                button{
+                    a{
+                        color: $colorAlternativoDos;
+                        text-decoration: none;
+                    }
                 }
-                a:hover {
-                    text-decoration: underline;
-                }
-                .collapsible {
-                    color: $colorAlternativoTres;
-                    cursor: pointer;
+                .content {
                     padding: 18px;
-                    width: 70px;
-                    border: $colorAlternativoDos;
-                    text-align: left;
-                    outline: none;
-                    font-size: 15px;
-                    .content {
-                    padding: 0 18px;
                     display: none;
                     overflow: hidden;
                     width: auto;
-                    }
-                    .collapsible:hover {
-                        background-color: $colorAlternativoCinco;
+                    ul{
+                        @include texto-parrafo(center, circle, auto, auto, #ddd, 10px);
+                        width: 100%;
                     }
                 }
             }
         }
     }
+
 }
+
 #aclaracionesServicios {
     margin: auto;
     text-align: center;
@@ -94,6 +88,11 @@
         h2{
             padding-top: 100px;
             font-size: 40px;
+        }
+        li{
+            color: $colorAclaraciones;
+            font-size: 15px;
+            font-style: italic;
         }
         #aclaracionCovid {
             margin-top: 50px;
@@ -123,9 +122,6 @@
                 td{
                     padding: 10px;
                     font-size: 15px;
-                    li {
-                        padding: 10px;
-                      }
                 }
             }
         }
@@ -166,9 +162,6 @@
         }
         table{
             max-width: 80%;
-            li {
-                padding: 10px;
-            }
             tr{
                 td{
                     padding: 10px;
@@ -195,11 +188,9 @@
 
 @media only screen and (min-width: 600px){
     .serviciosIntro{
-        h2{
+        h1{
             padding-top: 100px;
-        }
-        li{
-            font-size: 20px;
+            font-size: 60px;
         }
         #aclaracionCovid {
             margin-top: 50px;
@@ -221,9 +212,6 @@
           table{        
               max-width: 80%;
               font-size: 20px;
-              li {
-                  padding: 10px;
-              }
               tr{
                   td{
                       padding: 30px;

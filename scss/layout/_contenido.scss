@@ -5,8 +5,9 @@
     align-items: center;
     padding: 15px;
     text-align: center;
-    h2{        
-        font-size: 60px;
+    h1{        
+        @include titulos(center, 5px, 10px, 100px, $colorAlternativoUno, 60px);
+        padding-bottom: 40px;
     }
     &--Spotify{
         display: flex;
@@ -17,18 +18,17 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 10px;
-            &--SpotifyPlaylist iframe{
-                width: 260px;
-                 height: 500px;
-                justify-content: space-between;
-                margin: auto;
-            }
+            min-height: 600px;
+        }
+        iframe{
+            width: 260px;
+             height: 500px;
+            justify-content: space-between;
+            margin: 15px;
+            border-radius: 10px;
         }    
     }
 }
-
-
-
 
 
 @media only screen and (max-width: 400px){

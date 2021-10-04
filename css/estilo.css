@@ -1,16 +1,17 @@
-h1 {
+.tituloSeccion h1 {
   text-align: center;
   letter-spacing: none;
   padding: 100px;
   margin-top: none;
   color: #f371de;
-  font-size: 50px; }
+  font-size: 60px; }
 
 form {
   margin: auto; }
   form legend {
-    background-color: #a5218f; }
+    background-color: #771466; }
   form .contacto {
+    background-image: url(../img/img_formNombre.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +20,6 @@ form {
     color: #ddd;
     height: fit-content; }
   form .contacto__fieldsetNombre {
-    background-image: url(../img/img_formNombre.png);
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2% 19% 19% 19% 19% 19%;
@@ -52,38 +52,13 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-bottom: 50px; }
   form textarea {
     font: "Merriweather", serif;
     border: none;
     border-radius: 5px;
     background-color: #949494;
-    color: #0f0f1d; }
-  form .contacto__fieldsetBotones #enviar {
-    background-color: #ddd;
-    color: #062c41;
-    font-family: "Merriweather", serif;
-    border: none;
-    border-radius: 15px;
-    padding: 5px; }
-  form .contacto__fieldsetBotones #reset {
-    background-color: #ddd;
-    color: #062c41;
-    font-family: "Merriweather", serif;
-    border: none;
-    border-radius: 15px;
-    padding: 5px; }
-  form .contacto__fieldsetBotones #enviar:hover {
-    background-color: #ffef78; }
-  form .contacto__fieldsetBotones #reset:hover {
-    background-color: #ffef78; }
-  form .contacto__fieldsetBotones #enviar:active {
-    background-color: #f371de; }
-  form .contacto__fieldsetBotones #reset:active {
-    background-color: #f371de; }
-  form .contacto__fieldsetBotones .modal-title {
-    color: #0f0f1d; }
-  form .contacto__fieldsetBotones .modal-body {
     color: #0f0f1d; }
 
 @media only screen and (max-width: 800px) {
@@ -131,36 +106,40 @@ form {
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-areas: "nombreL        nombre" "pronombreL     pronombre" "nacimientoL    nacimiento" "emailL         email" "suscripcionL   suscripcion"; }
         form fieldset .contacto__grid--fieldsetNombre #nombreL {
-          grid-area: nombreL; }
+          grid-area: nombreL;
+          padding: 8px; }
         form fieldset .contacto__grid--fieldsetNombre #nombre {
           grid-area: nombre;
           font: 25px;
-          padding: 4px;
+          padding: 8px;
           margin: 10px;
           width: 300px; }
         form fieldset .contacto__grid--fieldsetNombre #pronombreL {
-          grid-area: nombreL; }
+          grid-area: nombreL;
+          padding: 8px; }
         form fieldset .contacto__grid--fieldsetNombre .listaPronombres {
           grid-area: pronombre;
           font: 25px;
-          padding: 4px;
+          padding: 8px;
           margin: 10px;
           width: 300px; }
         form fieldset .contacto__grid--fieldsetNombre #nacimientoL {
-          grid-area: nacimientoL; }
+          grid-area: nacimientoL;
+          padding: 8px; }
         form fieldset .contacto__grid--fieldsetNombre #nacimiento {
           grid-area: nacimiento;
           font: 25px;
-          padding: 4px;
+          padding: 8px;
           margin: 10px;
           width: 160px;
           margin-left: 100px; }
         form fieldset .contacto__grid--fieldsetNombre #emailL {
-          grid-area: emailL; }
+          grid-area: emailL;
+          padding: 8px; }
         form fieldset .contacto__grid--fieldsetNombre #email {
           grid-area: email;
           font-size: 25px;
-          padding: 4px;
+          padding: 8px;
           margin: 10px;
           width: 300px; }
         form fieldset .contacto__grid--fieldsetNombre .form-check {
@@ -201,8 +180,14 @@ form {
   align-items: center;
   padding: 15px;
   text-align: center; }
-  .contenido__externo h2 {
-    font-size: 60px; }
+  .contenido__externo h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin-top: 100px;
+    color: #f371de;
+    font-size: 60px;
+    padding-bottom: 40px; }
   .contenido__externo--Spotify {
     display: flex;
     flex-direction: column; }
@@ -211,12 +196,14 @@ form {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin: 10px; }
-      .contenido__externo--Spotify--SpotifyPlaylist--SpotifyPlaylist iframe {
-        width: 260px;
-        height: 500px;
-        justify-content: space-between;
-        margin: auto; }
+      margin: 10px;
+      min-height: 600px; }
+    .contenido__externo--Spotify iframe {
+      width: 260px;
+      height: 500px;
+      justify-content: space-between;
+      margin: 15px;
+      border-radius: 10px; }
 
 @media only screen and (max-width: 400px) {
   .contenido__externo h3 {
@@ -241,8 +228,7 @@ form {
     color: #f371de;
     font-size: 45px; }
   .grilla__Index .queEsastrologia p {
-    padding: 60px;
-    width: 80%; }
+    padding: 60px; }
 
 .grilla__Index .secciondos_index {
   grid-area: seccion3;
@@ -269,7 +255,7 @@ form {
         letter-spacing: 5px;
         padding: 5px;
         margin-top: auto;
-        color: #a5218f;
+        color: #771466;
         font-size: 25px; }
 
 .grilla__Index #parasabermas {
@@ -280,7 +266,6 @@ form {
   align-items: center;
   justify-content: center; }
   .grilla__Index #parasabermas #parasabermas:hover {
-    text-decoration: underline;
     align-items: center; }
 
 @media only screen and (max-width: 400px) {
@@ -297,17 +282,16 @@ form {
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
-      .div_main .astrodata_index h2 {
+      .div_main .astrodata_index h1 {
         text-align: center;
         letter-spacing: 5px;
         padding: auto;
-        margin-top: auto;
+        margin-top: 60px;
         color: #f371de;
         font-size: 34px;
         font-weight: lighter; }
       .div_main .astrodata_index p {
         font-size: small;
-        width: 80%;
         text-align: center;
         align-items: center; }
     .div_main .queEsastrologia {
@@ -315,6 +299,13 @@ form {
       flex-direction: column;
       padding-top: 30px;
       align-items: center; }
+      .div_main .queEsastrologia h2 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: auto;
+        margin-top: 60px;
+        color: #f371de;
+        font-size: 25px; }
       .div_main .queEsastrologia p {
         margin: 20px; }
     .div_main .secciondos_index {
@@ -345,6 +336,7 @@ form {
     justify-content: space-around;
     align-items: center; }
     .grilla__Index--main .astrodata_index {
+      margin-top: 60px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -379,27 +371,49 @@ form {
 
 @media only screen and (min-width: 600px) {
   .astrodata_index {
+    max-height: 600px;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 70% 1%;
     grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     align-items: baseline;
     width: 90%; }
-    .astrodata_index h2 {
+    .astrodata_index .animate__fadeInLeft {
       grid-area: Seccion1-1_Index;
-      font-size: 55px;
-      align-items: center;
+      text-align: center;
+      letter-spacing: 5px;
+      padding: 10px;
+      margin-top: 60px;
+      color: #f371de;
+      font-size: 60px;
       font-weight: lighter;
-      text-align: left;
-      padding: 10px; }
-    .astrodata_index p {
+      align-items: flex-start;
+      position: relative;
+      bottom: 390px; }
+    .astrodata_index .animate__fadeInRight {
+      grid-area: Seccion1-2_Index;
+      position: relative;
+      bottom: 60px; }
+    .astrodata_index .animate__fadeInUp {
       grid-area: Seccion1-3_Index;
       font-size: large;
       width: 80%;
       text-align: center;
-      padding-top: 5px; }
-  .queEsastrologia {
-    padding-top: 50px; }
+      padding: 10px 20px 10px 30px;
+      margin: 10px;
+      align-items: flex-end;
+      position: relative;
+      bottom: 150px;
+      left: 50px; }
+  .queEsastrologia h2 {
+    text-align: center;
+    letter-spacing: none;
+    padding: 20px 0px 10px 0px;
+    margin-top: auto;
+    color: #f371de;
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 20px; }
   .secciondos_index {
     display: flex;
     flex-direction: row;
@@ -412,8 +426,9 @@ form {
       padding: 20px 0px 10px 0px;
       margin-top: auto;
       color: #f371de;
-      font-size: 50px;
-      margin: auto; }
+      font-size: 30px;
+      margin: auto;
+      padding-bottom: 20px; }
   #parasabermas {
     font-size: 25px;
     padding: 15px;
@@ -422,11 +437,8 @@ form {
 @media only screen and (min-width: 1000px) {
   .astrodata_index {
     grid-area: seccion1;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 70% 30%;
-    grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
-    margin-top: 40px; }
+    margin-top: 60px;
+    padding-top: 60px; }
     .astrodata_index .animate__fadeInLeft {
       grid-area: Seccion1-1_Index;
       text-align: center;
@@ -442,7 +454,8 @@ form {
     .astrodata_index .animate__fadeInRight {
       grid-area: Seccion1-2_Index;
       position: relative;
-      bottom: 150px; }
+      bottom: 150px;
+      right: 40px; }
     .astrodata_index .animate__fadeInUp {
       grid-area: Seccion1-3_Index;
       font-size: large;
@@ -452,22 +465,26 @@ form {
       margin: 10px;
       align-items: flex-end;
       position: relative;
-      bottom: 390px;
+      bottom: 150px;
       left: 50px; }
   .queEsastrologia {
     padding-top: 10px;
     text-align: center;
     width: 80%; }
-  .secciondos_index .contenedor_cards {
-    display: flex;
-    justify-content: space-evenly; }
-  .secciondos_index .card-body {
-    width: 300px; }
-  #parasabermas {
-    grid-area: seccion4;
-    font-size: 20px;
-    padding: 15px;
-    margin: 15px; } }
+    .queEsastrologia h2 {
+      text-align: center;
+      letter-spacing: 5px;
+      padding: auto;
+      margin-top: 60px;
+      color: #f371de;
+      font-size: 40px; }
+  .secciondos_index h3 {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: auto;
+    margin-top: 60px;
+    color: #f371de;
+    font-size: 40px; } }
 
 .biografia {
   background-image: url(../img/quienSoyfondo.png);
@@ -482,20 +499,21 @@ form {
     text-align: center;
     letter-spacing: 5px;
     padding: 10px;
-    margin-top: 60px;
+    margin-top: 10px;
     color: #f371de;
-    font-size: 45px; }
+    font-size: 45px;
+    margin-bottom: 58px; }
 
 @media only screen and (max-width: 400px) {
   .biografia {
-    background-image: url(../img/quienSoyfondo400px);
+    background-image: url(../img/quienSoyfondo400px.png);
     padding: 20px;
     margin-bottom: 50px; }
     .biografia h2 {
       font-size: 30px;
-      padding-top: 90px; }
+      padding-top: 70px;
+      margin-bottom: 58px; }
     .biografia p {
-      padding: 10px;
       font-size: 15px; } }
 
 @media only screen and (min-width: 401px) {
@@ -538,17 +556,15 @@ form {
   padding: 10px;
   margin-top: 100px;
   color: #f371de;
-  font-size: 45px; }
+  font-size: 60px; }
 
-.serviciosIntro li {
+.serviciosIntro ul li {
   text-align: center;
   list-style-type: none;
   padding: 5px;
   margin: auto;
   color: #ddd;
-  font-size: 20px; }
-
-.serviciosIntro p {
+  font-size: 20px;
   color: #949494;
   font-size: 15px;
   font-style: italic; }
@@ -575,27 +591,25 @@ form {
       border-collapse: collapse;
       border-bottom: 1px solid #ddd;
       border-top: 1px solid #ddd; }
-    .seccion_Servicios table tr td a {
-      color: #f371de;
-      text-decoration: none; }
-    .seccion_Servicios table tr td a:hover {
-      text-decoration: underline; }
-    .seccion_Servicios table tr td .collapsible {
-      color: #a5218f;
-      cursor: pointer;
-      padding: 18px;
-      width: 70px;
-      border: #ffef78;
-      text-align: left;
-      outline: none;
-      font-size: 15px; }
-      .seccion_Servicios table tr td .collapsible .content {
-        padding: 0 18px;
+    .seccion_Servicios table tr td {
+      color: #ddd;
+      font-size: 12px; }
+      .seccion_Servicios table tr td button a {
+        color: #ffef78;
+        text-decoration: none; }
+      .seccion_Servicios table tr td .content {
+        padding: 18px;
         display: none;
         overflow: hidden;
         width: auto; }
-      .seccion_Servicios table tr td .collapsible .collapsible:hover {
-        background-color: #062c41; }
+        .seccion_Servicios table tr td .content ul {
+          text-align: center;
+          list-style-type: circle;
+          padding: auto;
+          margin: auto;
+          color: #ddd;
+          font-size: 10px;
+          width: 100%; }
 
 #aclaracionesServicios {
   margin: auto;
@@ -610,6 +624,10 @@ form {
   .serviciosIntro h2 {
     padding-top: 100px;
     font-size: 40px; }
+  .serviciosIntro li {
+    color: #949494;
+    font-size: 15px;
+    font-style: italic; }
   .serviciosIntro #aclaracionCovid {
     margin-top: 50px;
     margin-bottom: 80px; }
@@ -629,8 +647,6 @@ form {
     .seccion_Servicios table tr td {
       padding: 10px;
       font-size: 15px; }
-      .seccion_Servicios table tr td li {
-        padding: 10px; }
   #aclaracionesServicios {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -655,8 +671,6 @@ form {
     font-size: 30px; }
   .seccion_Servicios table {
     max-width: 80%; }
-    .seccion_Servicios table li {
-      padding: 10px; }
     .seccion_Servicios table tr td {
       padding: 10px;
       font-size: 15px; }
@@ -671,10 +685,9 @@ form {
       padding: 10px; } }
 
 @media only screen and (min-width: 600px) {
-  .serviciosIntro h2 {
-    padding-top: 100px; }
-  .serviciosIntro li {
-    font-size: 20px; }
+  .serviciosIntro h1 {
+    padding-top: 100px;
+    font-size: 60px; }
   .serviciosIntro #aclaracionCovid {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -690,8 +703,6 @@ form {
   .seccion_Servicios table {
     max-width: 80%;
     font-size: 20px; }
-    .seccion_Servicios table li {
-      padding: 10px; }
     .seccion_Servicios table tr td {
       padding: 30px; }
     .seccion_Servicios table tr th {
@@ -717,7 +728,7 @@ body {
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
   font-variant: initial;
-  width: 100%; }
+  width: 100% !important; }
   body .navbar {
     height: 0%; }
     body .navbar .container-fluid {
@@ -731,30 +742,50 @@ body {
   body p {
     color: #ddd;
     font-size: 20px;
-    text-align: center; }
-  body li {
     text-align: center;
-    list-style-type: none;
-    padding: 5px;
-    margin: auto;
-    color: #ddd;
-    font-size: 20px; }
-
-.redes_footer {
-  grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px 15px 10px 15px;
-  row-gap: 10px; }
-  .redes_footer .fa {
-    margin: 20px 15px 10px 15px; }
-    .redes_footer .fa .fa:hover {
-      opacity: 0.7; }
+    text-decoration: none; }
+  body a {
+    text-decoration: none; }
+  body button {
+    background-color: #fcf2a700;
+    padding: 10px 20px 10px 20px;
+    border-color: #f371de;
+    border-radius: 50px;
+    color: #ffef78;
+    text-align: center; }
+  body button:hover {
+    color: #ffef78;
+    background-color: #771466; }
+  body #reset {
+    background-color: #fcf2a700;
+    padding: 10px 20px 10px 20px;
+    border-color: #f371de;
+    border-radius: 50px;
+    color: #ffef78;
+    text-align: center; }
+  body #reset:hover {
+    color: #ffef78;
+    background-color: #771466; }
+  body .redes_footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 15px 10px 15px;
+    row-gap: 10px; }
+    body .redes_footer .fa {
+      margin: 20px 15px 10px 15px;
+      color: #ffef78da; }
+      body .redes_footer .fa .fa:hover {
+        opacity: 1; }
+    body .redes_footer p {
+      color: #ffef78da; }
+    body .redes_footer a {
+      color: #ffef78da; }
 
 @media only screen and (max-width: 400px) {
-  h2 {
-    font-size: 20px; }
+  .navbar .navbar-brand {
+    visibility: hidden; }
   .redes_footer p {
     font-size: 10px; }
   .redes_footer a {
@@ -763,10 +794,6 @@ body {
     font-size: 16px; } }
 
 @media only screen and (min-width: 401px) {
-  h1 {
-    font-size: 30px; }
-  h2 {
-    font-size: 30px; }
   .redes_footer p {
     font-size: 10px;
     padding: 10px; }
@@ -776,10 +803,6 @@ body {
     font-size: 16px; } }
 
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 50px; }
-  h2 {
-    font-size: 35px; }
   .redes_footer p {
     font-size: 15px;
     padding: 40px; }
@@ -789,20 +812,6 @@ body {
     font-size: 16px; } }
 
 @media only screen and (min-width: 1000px) {
-  h2 {
-    text-align: center;
-    letter-spacing: 5px;
-    padding: 10px;
-    margin-top: 60px;
-    color: #f371de;
-    font-size: 45px; }
-  h3 {
-    text-align: center;
-    letter-spacing: none;
-    padding: 10px;
-    margin-top: 20px;
-    color: #f371de;
-    font-size: 30px; }
   .redes_footer p {
     font-size: 15px;
     padding: 20px; }

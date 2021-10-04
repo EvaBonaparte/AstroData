@@ -10,22 +10,23 @@
     padding: 20px;
     text-align: center;
     h2{
-        @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
+        @include titulos(center, 5px, 10px, 10px, $colorAlternativoUno, 45px);
+        margin-bottom: 58px;
     }
 }
 
 @media only screen and (max-width: 400px){
 
     .biografia {
-        background-image: url(../img/quienSoyfondo400px);
+        background-image: url(../img/quienSoyfondo400px.png);
         padding: 20px;
         margin-bottom: 50px;
         h2{
             font-size: 30px;
-            padding-top: 90px;
+            padding-top: 70px;
+            margin-bottom: 58px;
         }
         p {
-            padding: 10px;
             font-size: 15px;
         }
     }

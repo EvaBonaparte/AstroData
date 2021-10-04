@@ -1,7 +1,9 @@
 @import "variables.scss";
 
-h1{
-  @include  titulos(center, none, 100px, none, $colorAlternativoUno, 50px);
+.tituloSeccion{
+  h1{
+    @include  titulos(center, none, 100px, none, $colorAlternativoUno, 60px);
+  }
 }
 
 form {
@@ -10,6 +12,7 @@ form {
     background-color: $colorAlternativoTres;
   }
   .contacto{
+      background-image: url(../img/img_formNombre.png);
       display: flex;
       flex-direction: column;
       justify-content:center;
@@ -19,7 +22,6 @@ form {
       height: fit-content;
   }
   .contacto__fieldsetNombre {
-    background-image: url(../img/img_formNombre.png);
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2% 19% 19% 19% 19% 19%;
@@ -69,7 +71,8 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around;    
+    padding-bottom: 50px;
   }
   textarea {
     font: "Merriweather", serif;
@@ -77,42 +80,6 @@ form {
     border-radius: 5px;
     background-color: $colorAclaraciones;
     color: $colorAlternativoCuatro;
-  }
-  .contacto__fieldsetBotones{
-    #enviar{
-      background-color: $colorParrafo;
-      color: $colorAlternativoCinco;
-      font-family: "Merriweather", serif;
-      border: none;
-      border-radius: 15px;
-      padding: 5px;
-    }
-    #reset {
-      background-color: $colorParrafo;
-      color: $colorAlternativoCinco;
-      font-family: "Merriweather", serif;
-      border: none;
-      border-radius: 15px;
-      padding: 5px;
-    }
-    #enviar:hover{
-      background-color: $colorAlternativoDos;
-    }
-    #reset:hover{
-      background-color: $colorAlternativoDos;
-    }
-    #enviar:active{
-      background-color: $colorAlternativoUno;
-    }
-    #reset:active {
-      background-color: $colorAlternativoUno;
-    }
-    .modal-title{
-      color: $colorAlternativoCuatro;
-    }
-    .modal-body{
-      color: $colorAlternativoCuatro;
-    }
   }
 }
 
@@ -157,7 +124,7 @@ form {
       border-width: 3px;
       border-radius: 5px;
       padding: 10px;
-      margin: 50px;
+      margin: 50px;      
       label{
         padding: 15px;
       }
@@ -175,42 +142,46 @@ form {
                               "suscripcionL   suscripcion";
           #nombreL{
             grid-area: nombreL;
+            padding: 8px;
           }
           #nombre {
             grid-area: nombre;
             font: 25px;
-            padding: 4px;
+            padding: 8px;
             margin: 10px;
             width: 300px;
           }
           #pronombreL{
             grid-area: nombreL;
+            padding: 8px;
           }
           .listaPronombres{
             grid-area: pronombre;
             font: 25px;
-            padding: 4px;
+            padding: 8px;
             margin: 10px;
             width: 300px;
           }
           #nacimientoL{
             grid-area: nacimientoL;
+            padding: 8px;
           }
           #nacimiento {
             grid-area: nacimiento;
             font: 25px;
-            padding: 4px;
+            padding: 8px;
             margin: 10px;
             width: 160px;
             margin-left: 100px;
           }
           #emailL{
             grid-area: emailL;
+            padding: 8px;
           }
           #email {
             grid-area: email;
             font-size: 25px;
-            padding: 4px;
+            padding: 8px;
             margin: 10px;
             width: 300px;
           }

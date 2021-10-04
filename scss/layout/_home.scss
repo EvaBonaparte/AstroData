@@ -16,7 +16,6 @@
         }
         p{
             padding: 60px;
-            width: 80%;
         }
     }
     .secciondos_index {
@@ -30,7 +29,6 @@
             justify-content: center;
             padding-top: 30px;
             .contenedor_cards{
-
                 .card-body{
                     text-align: center;
                     align-items: center;
@@ -42,7 +40,7 @@
                     margin-left: auto;
                     margin-right: auto;
                     h5{
-                        @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
+                       @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
                     }
                 }
             }
@@ -56,7 +54,6 @@
         align-items: center;
         justify-content: center;
         #parasabermas:hover {
-            text-decoration: underline;
             align-items: center;
           }
     }
@@ -78,13 +75,12 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            h2{
-                @include titulos(center, 5px, auto, auto, $colorAlternativoUno, 34px);
+            h1{
+                @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 34px);
                 font-weight: lighter;
             }
             p{
                 font-size: small;
-                width: 80%;
                 text-align: center;
                 align-items: center;
             }
@@ -94,6 +90,9 @@
             flex-direction: column;
             padding-top: 30px;
             align-items: center;
+            h2{
+                @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 25px);
+            }
             p{
                 margin: 20px;
             }
@@ -126,10 +125,24 @@
         justify-content: space-around;
         align-items: center;
         .astrodata_index{
+            margin-top: 60px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            .animate__fadeInLeft{
+                @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 60px);
+                font-weight: lighter;  
+            }
+            .animate__fadeInRight{
+                position: relative;
+            }
+            .animate__fadeInUp{
+                font-size: large;
+                width: 80%;
+                text-align: center;
+                padding: 10px 20px 10px 30px;
+                margin: 10px;         
         }
         
         .queEsastrologia{
@@ -164,31 +177,46 @@
 
 @media only screen and (min-width: 600px){
     .astrodata_index{
+        max-height: 600px;
         display: grid;
         grid-template-columns: 70% 30%;
-        grid-template-rows: 70% 30%;
+        grid-template-rows: 70% 1%;
         grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
                             "Seccion1-3_Index Seccion1-2_Index";
         align-items: baseline;  
         width: 90%;
-        h2{
+        .animate__fadeInLeft{
             grid-area: Seccion1-1_Index;
-            font-size: 55px;
-            align-items: center;
-            font-weight: lighter;
-            text-align:left;
-            padding: 10px;
+            @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 60px);
+            font-weight: lighter;            
+            align-items: flex-start;
+            position: relative;
+            bottom: 390px;
         }
-        p{
+        .animate__fadeInRight{
+            grid-area:  Seccion1-2_Index;
+            position: relative;
+            bottom: 60px;
+        }
+        .animate__fadeInUp{
             grid-area: Seccion1-3_Index;
             font-size: large;
             width: 80%;
             text-align: center;
-            padding-top: 5px;
-          }                 
+            padding: 10px 20px 10px 30px;
+            margin: 10px;
+            align-items: flex-end;
+            position: relative;
+            bottom: 150px;
+            left: 50px;
+        }                
     }
     .queEsastrologia{
-      padding-top: 50px;
+      h2 {
+        @include titulos(center, none, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
+        margin: auto;
+        padding-bottom: 20px;
+    }
     }
     .secciondos_index{
         display: flex;
@@ -197,9 +225,10 @@
         align-items: center;
         justify-content: baseline;
         h3 {
-            @include titulos(center, none, 20px 0px 10px 0px, auto, $colorAlternativoUno, 50px);
+            @include titulos(center, none, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
             margin: auto;
-          }
+            padding-bottom: 20px;
+        }
     }
     #parasabermas{
       font-size: 25px;
@@ -212,12 +241,9 @@
 @media only screen and (min-width: 1000px){
     .astrodata_index{
         grid-area: seccion1;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 70% 30%;
-        grid-template-areas: "Seccion1-1_Index Seccion1-2_Index"
-                            "Seccion1-3_Index Seccion1-2_Index";
-        margin-top: 40px;
+
+        margin-top: 60px;
+        padding-top: 60px;
         .animate__fadeInLeft{
             grid-area: Seccion1-1_Index;
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 120px);
@@ -230,6 +256,7 @@
             grid-area:  Seccion1-2_Index;
             position: relative;
             bottom: 150px;
+            right: 40px;
         }
         .animate__fadeInUp{
             grid-area: Seccion1-3_Index;
@@ -240,7 +267,7 @@
             margin: 10px;
             align-items: flex-end;
             position: relative;
-            bottom: 390px;
+            bottom: 150px;
             left: 50px;
         }
     }
@@ -248,20 +275,13 @@
         padding-top: 10px;
         text-align: center;
         width: 80%;
+        h2{
+            @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 40px);
+        }
     }
     .secciondos_index{
-        .contenedor_cards{
-            display: flex;
-            justify-content: space-evenly;
-          }
-          .card-body{
-            width: 300px;
-          }
-    }
-    #parasabermas{
-        grid-area: seccion4;
-        font-size: 20px;
-        padding: 15px;
-        margin: 15px;
+        h3{
+            @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 40px);
+        }
     }
 }
