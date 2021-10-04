@@ -336,11 +336,20 @@ form {
     justify-content: space-around;
     align-items: center; }
     .grilla__Index--main .astrodata_index {
-      margin-top: 60px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
+      .grilla__Index--main .astrodata_index .animate__fadeInLeft {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 10px;
+        margin-top: 60px;
+        color: #f371de;
+        font-size: 30px;
+        padding-top: 20px; }
+      .grilla__Index--main .astrodata_index .animate__fadeInUp {
+        padding-top: 20px; }
     .grilla__Index--main .queEsastrologia {
       display: flex;
       flex-direction: column;

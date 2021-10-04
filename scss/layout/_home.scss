@@ -125,24 +125,17 @@
         justify-content: space-around;
         align-items: center;
         .astrodata_index{
-            margin-top: 60px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             .animate__fadeInLeft{
-                @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 60px);
-                font-weight: lighter;  
-            }
-            .animate__fadeInRight{
-                position: relative;
+                @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 30px);
+                padding-top: 20px;
             }
             .animate__fadeInUp{
-                font-size: large;
-                width: 80%;
-                text-align: center;
-                padding: 10px 20px 10px 30px;
-                margin: 10px;         
+                padding-top: 20px;
+            }
         }
         
         .queEsastrologia{
