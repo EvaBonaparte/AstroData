@@ -61,7 +61,7 @@
                     overflow: hidden;
                     width: auto;
                     ul{
-                        @include texto-parrafo(center, circle, auto, auto, #ddd, 10px);
+                        @include texto-parrafo(center, circle, 1px, auto, #ddd, 10px);
                         width: 100%;
                     }
                 }

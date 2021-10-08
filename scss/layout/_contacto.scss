@@ -2,7 +2,10 @@
 
 .tituloSeccion{
   h1{
-    @include  titulos(center, none, 100px, none, $colorAlternativoUno, 60px);
+    text-align: center;
+    padding: 100px;
+    color: #f371de;
+    font-size: 60px;
   }
 }
 
@@ -75,7 +78,7 @@ form {
     padding-bottom: 50px;
   }
   textarea {
-    font: "Merriweather", serif;
+    font-family: "Merriweather", serif;
     border: none;
     border-radius: 5px;
     background-color: $colorAclaraciones;

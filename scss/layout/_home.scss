@@ -76,7 +76,7 @@
             justify-content: space-around;
             align-items: center;
             h1{
-                @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 34px);
+                @include titulos(center, 5px, 3px, 60px, $colorAlternativoUno, 34px);
                 font-weight: lighter;
             }
             p{
@@ -91,7 +91,7 @@
             padding-top: 30px;
             align-items: center;
             h2{
-                @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 25px);
+                @include titulos(center, 5px, 3px, 60px, $colorAlternativoUno, 25px);
             }
             p{
                 margin: 20px;
@@ -206,7 +206,7 @@
     }
     .queEsastrologia{
       h2 {
-        @include titulos(center, none, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
+        @include titulos(center, normal, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
         margin: auto;
         padding-bottom: 20px;
     }
@@ -216,9 +216,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: baseline;
+        justify-content:center;
         h3 {
-            @include titulos(center, none, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
+            @include titulos(center, normal, 20px 0px 10px 0px, auto, $colorAlternativoUno, 30px);
             margin: auto;
             padding-bottom: 20px;
         }
@@ -269,12 +269,12 @@
         text-align: center;
         width: 80%;
         h2{
-            @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 40px);
+            @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 40px);
         }
     }
     .secciondos_index{
         h3{
-            @include titulos(center, 5px, auto, 60px, $colorAlternativoUno, 40px);
+            @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 40px);
         }
     }
 }
