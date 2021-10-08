@@ -14,8 +14,9 @@
         h2{
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 45px);
         }
-        p{
-            padding: 60px;
+        p.parrafoIndex{
+            padding-left: 60px;
+            padding-right: 60px;
         }
     }
     .secciondos_index {
@@ -28,21 +29,15 @@
             align-items: center;
             justify-content: center;
             padding-top: 30px;
-            .contenedor_cards{
-                .card-body{
-                    width: 250px;
-                    text-align: center;
-                    align-items: center;
-                    margin: auto;
-                    border-radius: 50px;
-                    margin: 10px;
-                    background-color: $colorAclaraciones;
-                    position: relative;
-                    margin-left: auto;
-                    margin-right: auto;
-                    h5{
-                       @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
-                    }
+            .card-body{
+                margin-bottom: .5rem;
+                text-align: center;
+                border-radius: 50px;
+                margin: 10px;
+                background-color: $colorAclaraciones;
+                position: relative;
+                h5{
+                   @include titulos(center, 5px, 5px, auto, $colorAlternativoTres, 25px)
                 }
             }
         }        
@@ -237,7 +232,6 @@
 @media only screen and (min-width: 1000px){
     .astrodata_index{
         grid-area: seccion1;
-
         margin-top: 60px;
         padding-top: 60px;
         h1{
@@ -272,6 +266,12 @@
         text-align: center;
         h2{
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 40px);
+            padding-bottom: 30px;
+        }
+        p.parrafoIndex{
+            margin-top: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
         }
     }
     .secciondos_index{
