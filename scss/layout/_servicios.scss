@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 
-    .serviciosIntro{
+    section#serviciosIntro{
         h1#tituloSeccion{
             text-align: center;
             letter-spacing: 5px;
@@ -214,15 +214,32 @@
 }
 
 @media only screen and (min-width: 600px){
-    .serviciosIntro{
-        #tituloSeccion{
-            padding-top: 100px;
+    section#serviciosIntro{
+        h1#tituloSeccion{
+            text-align: center;
+            letter-spacing: 5px;
+            padding: 10px;
+            margin-top: 60px;
+            color: #f371de;
             font-size: 60px;
         }
-        #aclaracionCovid {
-            margin-top: 50px;
-            margin-bottom: 80px;
-            font-size: 15px;
+        ul{
+            li{
+                text-align: center;
+                list-style-type: none;
+                padding: 5px;
+                margin: auto;
+                color: #ddd;
+                font-size: 20px;
+                color: #949494;
+                font-size: 15px;
+                font-style: italic;
+            }
+        }
+        #aclaracionCovid{
+            color: $colorAclaraciones;
+            font-size: 10px;
+            font-style: italic;
         }
     }
     .seccion_Servicios{ 
