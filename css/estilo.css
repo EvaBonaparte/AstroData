@@ -1,8 +1,6 @@
 .tituloSeccion h1 {
   text-align: center;
-  letter-spacing: none;
   padding: 100px;
-  margin-top: none;
   color: #f371de;
   font-size: 60px; }
 
@@ -55,7 +53,7 @@ form {
     justify-content: space-around;
     padding-bottom: 50px; }
   form textarea {
-    font: "Merriweather", serif;
+    font-family: "Merriweather", serif;
     border: none;
     border-radius: 5px;
     background-color: #949494;
@@ -209,7 +207,7 @@ form {
   .contenido__externo h3 {
     padding: 5px; }
   --Spotify iframe {
-    margin-bottom: 20px; } }
+    margin: 10px; } }
 
 .grilla__Index .astrodata_index {
   height: fit-content; }
@@ -241,6 +239,7 @@ form {
     justify-content: center;
     padding-top: 30px; }
     .grilla__Index .secciondos_index .contenedor_cards .contenedor_cards .card-body {
+      width: 250px;
       text-align: center;
       align-items: center;
       margin: auto;
@@ -285,7 +284,7 @@ form {
       .div_main .astrodata_index h1 {
         text-align: center;
         letter-spacing: 5px;
-        padding: auto;
+        padding: 3px;
         margin-top: 60px;
         color: #f371de;
         font-size: 34px;
@@ -302,7 +301,7 @@ form {
       .div_main .queEsastrologia h2 {
         text-align: center;
         letter-spacing: 5px;
-        padding: auto;
+        padding: 3px;
         margin-top: 60px;
         color: #f371de;
         font-size: 25px; }
@@ -340,7 +339,7 @@ form {
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
-      .grilla__Index--main .astrodata_index .animate__fadeInLeft {
+      .grilla__Index--main .astrodata_index h1 {
         text-align: center;
         letter-spacing: 5px;
         padding: 10px;
@@ -355,6 +354,13 @@ form {
       flex-direction: column;
       padding-top: 30px;
       align-items: center; }
+      .grilla__Index--main .queEsastrologia h2 {
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 3px;
+        margin-top: 60px;
+        color: #f371de;
+        font-size: 25px; }
       .grilla__Index--main .queEsastrologia p {
         margin: 20px; }
     .grilla__Index--main .secciondos_index {
@@ -371,8 +377,7 @@ form {
         padding: 20px 0px 10px 0px;
         margin-top: auto;
         color: #f371de;
-        font-size: 20px;
-        width: 80%; }
+        font-size: 20px; }
     .grilla__Index--main #parasabermas {
       font-size: small;
       padding: 15px;
@@ -387,7 +392,7 @@ form {
     grid-template-areas: "Seccion1-1_Index Seccion1-2_Index" "Seccion1-3_Index Seccion1-2_Index";
     align-items: baseline;
     width: 90%; }
-    .astrodata_index .animate__fadeInLeft {
+    .astrodata_index h1 {
       grid-area: Seccion1-1_Index;
       text-align: center;
       letter-spacing: 5px;
@@ -416,7 +421,7 @@ form {
       left: 50px; }
   .queEsastrologia h2 {
     text-align: center;
-    letter-spacing: none;
+    letter-spacing: normal;
     padding: 20px 0px 10px 0px;
     margin-top: auto;
     color: #f371de;
@@ -428,10 +433,10 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: baseline; }
+    justify-content: center; }
     .secciondos_index h3 {
       text-align: center;
-      letter-spacing: none;
+      letter-spacing: normal;
       padding: 20px 0px 10px 0px;
       margin-top: auto;
       color: #f371de;
@@ -448,7 +453,7 @@ form {
     grid-area: seccion1;
     margin-top: 60px;
     padding-top: 60px; }
-    .astrodata_index .animate__fadeInLeft {
+    .astrodata_index h1 {
       grid-area: Seccion1-1_Index;
       text-align: center;
       letter-spacing: 5px;
@@ -478,19 +483,18 @@ form {
       left: 50px; }
   .queEsastrologia {
     padding-top: 10px;
-    text-align: center;
-    width: 80%; }
+    text-align: center; }
     .queEsastrologia h2 {
       text-align: center;
       letter-spacing: 5px;
-      padding: auto;
+      padding: 10px;
       margin-top: 60px;
       color: #f371de;
       font-size: 40px; }
   .secciondos_index h3 {
     text-align: center;
     letter-spacing: 5px;
-    padding: auto;
+    padding: 10px;
     margin-top: 60px;
     color: #f371de;
     font-size: 40px; } }
@@ -498,7 +502,7 @@ form {
 .biografia {
   background-image: url(../img/quienSoyfondo.png);
   background-position: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   background-position: center;
@@ -614,7 +618,7 @@ form {
         .seccion_Servicios table tr td .content ul {
           text-align: center;
           list-style-type: circle;
-          padding: auto;
+          padding: 1px;
           margin: auto;
           color: #ddd;
           font-size: 10px;
@@ -648,14 +652,12 @@ form {
     padding: 10px;
     margin: 100px 0px 40px;
     font-size: 30px; }
-  .seccion_Servicios table {
-    max-width: 80%; }
-    .seccion_Servicios table tr th {
-      padding: 10px;
-      font-size: 15px; }
-    .seccion_Servicios table tr td {
-      padding: 10px;
-      font-size: 15px; }
+  .seccion_Servicios table tr th {
+    padding: 10px;
+    font-size: 15px; }
+  .seccion_Servicios table tr td {
+    padding: 10px;
+    font-size: 15px; }
   #aclaracionesServicios {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -678,14 +680,12 @@ form {
     padding: 10px;
     margin: 100px 0px 40px;
     font-size: 30px; }
-  .seccion_Servicios table {
-    max-width: 80%; }
-    .seccion_Servicios table tr td {
-      padding: 10px;
-      font-size: 15px; }
-    .seccion_Servicios table tr th {
-      padding: 10px;
-      font-size: 15px; }
+  .seccion_Servicios table tr td {
+    padding: 10px;
+    font-size: 15px; }
+  .seccion_Servicios table tr th {
+    padding: 10px;
+    font-size: 15px; }
   #aclaracionesServicios {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -710,7 +710,6 @@ form {
     margin: 100px 0px 40px;
     font-size: 50px; }
   .seccion_Servicios table {
-    max-width: 80%;
     font-size: 20px; }
     .seccion_Servicios table tr td {
       padding: 30px; }
@@ -736,8 +735,7 @@ body {
   background-image: url(../img/nav.png);
   background-attachment: fixed;
   font-family: 'Open Sans', sans-serif;
-  font-variant: initial;
-  width: 100% !important; }
+  font-variant: initial; }
   body .navbar {
     height: 0%; }
     body .navbar .container-fluid {

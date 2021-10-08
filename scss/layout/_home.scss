@@ -30,6 +30,7 @@
             padding-top: 30px;
             .contenedor_cards{
                 .card-body{
+                    width: 250px;
                     text-align: center;
                     align-items: center;
                     margin: auto;
@@ -129,7 +130,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            .animate__fadeInLeft{
+            h1{
                 @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 30px);
                 padding-top: 20px;
             }
@@ -143,6 +144,9 @@
             flex-direction: column;
             padding-top: 30px;
             align-items: center;
+            h2{
+                @include titulos(center, 5px, 3px, 60px, $colorAlternativoUno, 25px);
+            }
             p{
                 margin: 20px;
             }
@@ -157,7 +161,6 @@
             justify-content: space-around;
             h3 {
                 @include titulos(center, 5px, 20px 0px 10px 0px, auto, $colorAlternativoUno, 20px);
-                width: 80%;
             }
         }
         #parasabermas{
@@ -178,7 +181,7 @@
                             "Seccion1-3_Index Seccion1-2_Index";
         align-items: baseline;  
         width: 90%;
-        .animate__fadeInLeft{
+        h1{
             grid-area: Seccion1-1_Index;
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 60px);
             font-weight: lighter;            
@@ -237,7 +240,7 @@
 
         margin-top: 60px;
         padding-top: 60px;
-        .animate__fadeInLeft{
+        h1{
             grid-area: Seccion1-1_Index;
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 120px);
             font-weight: lighter;            
@@ -267,7 +270,6 @@
     .queEsastrologia{
         padding-top: 10px;
         text-align: center;
-        width: 80%;
         h2{
             @include titulos(center, 5px, 10px, 60px, $colorAlternativoUno, 40px);
         }
