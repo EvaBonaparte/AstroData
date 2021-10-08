@@ -25,6 +25,7 @@ body{
             position: fixed;
             padding-top: 3rem;
             height: fit-content;
+            padding-top: 20px;
             background-image: url(../img/nav.png);
         #logo{
             padding: 10px;
@@ -108,6 +109,19 @@ body{
     }
     .iconos {
         font-size: 16px;
+    }
+    button{
+        background-color: $colorBotones;
+        padding: 2px 5px 2px 5px;
+        border-color: $colorAlternativoUno;
+        border-radius: 25px;
+        color: $colorAlternativoDos;
+        text-align: center;
+        font-size: 10px;
+    }
+    button:hover {
+        color: $colorAlternativoDos;
+        background-color: $colorAlternativoTres;
     }
 }
 

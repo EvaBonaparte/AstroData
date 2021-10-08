@@ -563,7 +563,7 @@ form {
       padding: 20px;
       font-size: 40px; } }
 
-.serviciosIntro h1 {
+main .serviciosIntro h1 {
   text-align: center;
   letter-spacing: 5px;
   padding: 10px;
@@ -571,7 +571,7 @@ form {
   color: #f371de;
   font-size: 60px; }
 
-.serviciosIntro ul li {
+main .serviciosIntro ul li {
   text-align: center;
   list-style-type: none;
   padding: 5px;
@@ -582,7 +582,7 @@ form {
   font-size: 15px;
   font-style: italic; }
 
-.serviciosIntro #aclaracionCovid {
+main .serviciosIntro #aclaracionCovid {
   color: #949494;
   font-size: 10px;
   font-style: italic; }
@@ -595,7 +595,8 @@ form {
     text-align: center;
     font-size: 50px; }
   .seccion_Servicios table {
-    align-items: center; }
+    margin-left: auto;
+    margin-right: auto; }
     .seccion_Servicios table tr th {
       color: #ddd;
       font-size: 20px;
@@ -654,14 +655,13 @@ form {
     font-size: 30px; }
   .seccion_Servicios table tr th {
     padding: 10px;
-    font-size: 15px; }
+    font-size: 10px; }
   .seccion_Servicios table tr td {
     padding: 10px;
-    font-size: 15px; }
+    font-size: 10px; }
   #aclaracionesServicios {
     padding-top: 40px;
-    padding-bottom: 80px;
-    max-width: 60%; }
+    padding-bottom: 80px; }
     #aclaracionesServicios p {
       padding: 10px; } }
 
@@ -681,15 +681,14 @@ form {
     margin: 100px 0px 40px;
     font-size: 30px; }
   .seccion_Servicios table tr td {
-    padding: 10px;
+    padding: 2px;
     font-size: 15px; }
   .seccion_Servicios table tr th {
-    padding: 10px;
+    padding: 2px;
     font-size: 15px; }
   #aclaracionesServicios {
     padding-top: 40px;
-    padding-bottom: 80px;
-    max-width: 60%; }
+    padding-bottom: 80px; }
     #aclaracionesServicios p {
       padding: 10px; } }
 
@@ -718,7 +717,6 @@ form {
   #aclaracionesServicios {
     padding-top: 40px;
     padding-bottom: 80px;
-    max-width: 60%;
     font-size: 15px; }
     #aclaracionesServicios p {
       padding: 10px;
@@ -742,6 +740,7 @@ body {
       position: fixed;
       padding-top: 3rem;
       height: fit-content;
+      padding-top: 20px;
       background-image: url(../img/nav.png); }
       body .navbar .container-fluid #logo {
         padding: 10px;
@@ -798,7 +797,18 @@ body {
   .redes_footer a {
     font-size: 10px; }
   .iconos {
-    font-size: 16px; } }
+    font-size: 16px; }
+  button {
+    background-color: #fcf2a700;
+    padding: 2px 5px 2px 5px;
+    border-color: #f371de;
+    border-radius: 25px;
+    color: #ffef78;
+    text-align: center;
+    font-size: 10px; }
+  button:hover {
+    color: #ffef78;
+    background-color: #771466; } }
 
 @media only screen and (min-width: 401px) {
   .redes_footer p {
