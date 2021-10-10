@@ -499,7 +499,16 @@ form {
     padding: 10px;
     margin-top: 60px;
     color: #f371de;
-    font-size: 40px; } }
+    font-size: 40px; }
+  .secciondos_index .contenedor_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .secciondos_index .contenedor_cards .card-body {
+      text-align: center;
+      justify-content: center; }
+      .secciondos_index .contenedor_cards .card-body .btn {
+        align-self: baseline; } }
 
 .biografia {
   background-image: url(../img/quienSoyfondo.png);
@@ -741,12 +750,14 @@ section#serviciosIntro #aclaracionCovid {
     padding: 10px;
     margin: 100px 0px 40px;
     font-size: 50px; }
-  .seccion_Servicios table {
+  .seccion_Servicios table tr td {
+    padding: 30px;
     font-size: 20px; }
-    .seccion_Servicios table tr td {
-      padding: 30px; }
-    .seccion_Servicios table tr th {
-      padding: 30px; }
+    .seccion_Servicios table tr td ul li {
+      font-size: 15px; }
+  .seccion_Servicios table tr th {
+    padding: 30px;
+    font-size: 25px; }
   #aclaracionesServicios {
     padding-top: 40px;
     padding-bottom: 80px;
