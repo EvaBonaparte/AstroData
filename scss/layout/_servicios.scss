@@ -8,7 +8,6 @@
             padding: 10px;
             margin-top: 60px;
             color: #f371de;
-            font-size: 60px;
         }
         ul{
             li{
@@ -94,9 +93,9 @@
 }
 
 @media only screen and (max-width: 400px){
-
-    .serviciosIntro{
-        h2{
+    
+    .section#serviciosIntro{
+        h1#tituloSeccion{
             padding-top: 100px;
             font-size: 40px;
             text-align: center;
@@ -109,6 +108,7 @@
         #aclaracionCovid {
             margin-top: 50px;
             margin-bottom: 80px;
+            align-items: center;
         }
     }
     .seccion_Servicios{
@@ -153,12 +153,7 @@
 @media only screen and (min-width: 401px){
     .serviciosIntro{
         #tituloSeccion{
-            text-align: center;
-            letter-spacing: 5px;
-            padding: 10px;
-            margin-top: 60px;
-            color: #f371de;
-            font-size: 60px;
+            font-size: 40px;
         }
         ul{
             li{
@@ -254,21 +249,27 @@
             font-size: 50px;
         }
         table{
-            tr{
-                td{
-                    padding: 30px;                              
-                    font-size: 20px;
-                    ul{
-                        li{
-                            font-size: 15px;
+            tbody{            
+                margin-left: auto;
+                margin-right: auto;
+                tr{
+                    td{
+                        width: 225px;
+                        padding: 10px;                              
+                        font-size: 20px;
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
                         }
                     }
-                }
-            } 
-            tr{
-                th {
-                    padding: 30px;
-                    font-size: 25px;
+                } 
+                tr{
+                    th {
+                        max-width: 285px;
+                        padding: 30px;
+                        font-size: 25px;
+                    }
                 }
             }
         }
